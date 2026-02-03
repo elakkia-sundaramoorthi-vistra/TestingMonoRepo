@@ -38,7 +38,7 @@ const getAIResponse = (userMessage: string): string => {
   }
   
   return `${responses[Math.floor(Math.random() * responses.length)]}\n\nYou mentioned: "${userMessage}"\n\nThis is a demo response. In a real application, this would be replaced with actual AI-generated content based on your message.`;
-};
+//};
 
 export default function App() {
   const [sessions, setSessions] = useState<Session[]>([
