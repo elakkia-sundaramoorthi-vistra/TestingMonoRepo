@@ -5,14 +5,10 @@ on:
     branches: [ "main" ]
     paths:
       - 'NextJsProject' # Trigger only for changes in Project A's directory
-    paths-ignore:
-      - ".github/workflows/**"
   pull_request:
     branches: [ "main" ]
     paths:
       - 'NextJsProject' # Trigger only for changes in Project A's directory
-    paths-ignore:
-      - ".github/workflows/**"
   workflow_dispatch: # Allows manual triggering
 
 jobs:
