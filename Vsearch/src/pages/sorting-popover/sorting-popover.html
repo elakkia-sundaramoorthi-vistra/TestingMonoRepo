@@ -1,0 +1,8 @@
+<ion-list>
+  <ion-list-header class="popover-header">{{ utils.genericPopoverHeader }}</ion-list-header>
+  <ion-item (click)="returnItem(item.value)" *ngFor="let item of utils.genericPopoverItems"
+    class="clickable hover-effect" [ngClass]="searchProvider.sortingSettings.order==item.value? 'clickable highlighted hover-effect': 'clickable hover-effect'">
+    {{ item.label }}
+    <ion-icon slot="end" [name]="item.icon" *ngIf="item.icon"></ion-icon>
+  </ion-item>
+</ion-list>

@@ -1,0 +1,79 @@
+page-home {
+  .scroll-content {
+    // background-image      : url('../../assets/imgs/VSearch page_bground image a.png');
+    background-image      : url('../../assets/imgs/VSearch page_bground image a_11zon.jpg');
+    background-repeat     : no-repeat;
+    background-attachment : fixed;
+    background-position   : center;
+    background-size   	  : 100% 100%;
+  }
+ion-input {
+  text-align: center;
+}
+}
+ion-grid{
+    height: 100%;
+}
+ion-row{
+    display: block !important;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+.search-input {
+  background-color: #f0f8ff;
+  border: solid 1px #d1d1d1;
+  border-radius: 30px !important;
+  width: 48%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2%;
+}
+.text-input {
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
+}
+.search-button {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 6px;
+}
+.search-logo {
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  margin-bottom: 2%;
+}
+.search-form {
+  padding-top: 12%;
+}
+  .footer-grid {
+    background-color: color($colors, vistra-grey, base) !important;
+    width: 100%;
+    color: color($colors, vistra-white, base);
+    // border-radius: 5px;
+  }
+  .footer-grid ion-col {
+    text-align: end;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+ion-footer {
+  background-color: color($colors, vistra-grey, base) !important;
+  text-align: right;
+}
+/* @media screen and (min-width: 1025px) {
+  .vistra-logo {
+    width: 15%;
+  }
+}  */
+.vlogo {
+  height: 100%;
+}
+.vistra-logo {
+  padding-top: 10px;
+  padding-right: 30px;
+  width: 150px;
+  margin-right: 0px;
+}

@@ -1,0 +1,218 @@
+<ion-list no-lines class="filter-list-no-static-footer left-panel island-grey" padding>
+<!--   <ion-item class="filter-instruction">
+    Select from the following options to narrow your search:
+  </ion-item>
+ -->  <!-- <strong class="left-panel-subheader">Author</strong> -->
+  <ion-item class="filter-group-header-with-toggle grouped-checkbox">
+    <ion-label><strong>Author</strong></ion-label>
+    <ion-buttons item-end>
+      <button ion-button small clear icon-only (click)="toggleGroup('author')">
+        <ion-icon name="remove" color="vistra-grey" *ngIf="filterGroupToggle.author.show"></ion-icon>
+        <ion-icon name="add" color="vistra-grey" *ngIf="!filterGroupToggle.author.show"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-item>
+  <ion-item class="grouped-checkbox" *ngIf="filterGroupToggle.author.show">
+    <ion-checkbox (click)="emitApplyFilters()" color="vistra-white" [(ngModel)]="apiSettingsProvider.filteringCriteria.createdByMe" id="chkCreatedByMe"></ion-checkbox>
+    <ion-label (click)="emitApplyFilters()">Created by me</ion-label>
+  </ion-item>
+  <ion-item class="checkbox-item grouped-checkbox" *ngIf="filterGroupToggle.author.show">
+    <ion-checkbox (click)="emitApplyFilters()" color="vistra-white" [(ngModel)]="apiSettingsProvider.filteringCriteria.createdByOthers" id="chkCreatedByOthers"></ion-checkbox>
+    <ion-label (click)="emitApplyFilters()">Created by others</ion-label>
+  </ion-item>
+  <!-- <strong class="left-panel-subheader overlined-header">
+    Date Created
+  </strong> -->
+  <hr>
+  <ion-item class="filter-group-header-with-toggle grouped-checkbox">
+    <ion-label><strong>Date Created</strong></ion-label>
+    <ion-buttons item-end>
+      <button ion-button small clear icon-only (click)="toggleGroup('dateCreated')">
+        <ion-icon name="remove" color="vistra-grey" *ngIf="filterGroupToggle.dateCreated.show"></ion-icon>
+        <ion-icon name="add" color="vistra-grey" *ngIf="!filterGroupToggle.dateCreated.show"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-item>
+  <ion-item class="grouped-checkbox" *ngIf="filterGroupToggle.dateCreated.show">
+    <ion-checkbox (click)="emitApplyFilters()" color="vistra-white" [(ngModel)]="apiSettingsProvider.filteringCriteria.createdLastSixMonths" id="chkCreatedLastSixMonths"></ion-checkbox>
+    <ion-label (click)="emitApplyFilters()">Created in the last 6 months</ion-label>
+  </ion-item>
+  <ion-item class="grouped-checkbox" *ngIf="filterGroupToggle.dateCreated.show">
+    <ion-checkbox (click)="emitApplyFilters()" color="vistra-white" [(ngModel)]="apiSettingsProvider.filteringCriteria.createdLastYear" id="chkCreatedLastYear"></ion-checkbox>
+    <ion-label (click)="emitApplyFilters()">Created in last year</ion-label>
+  </ion-item>
+  <ion-item class="grouped-checkbox" *ngIf="filterGroupToggle.dateCreated.show">
+    <!-- <ion-checkbox color="vistra-white" (ngModelChange)="emitApplyFiltersToClearDateCreatedRange()" [(ngModel)]="apiSettingsProvider.filteringCriteria.dateCreatedRange"></ion-checkbox> -->
+    <!-- <ion-checkbox color="vistra-white" (ionChange)="emitApplyFiltersToClearDateCreatedRange($event)" [(ngModel)]="apiSettingsProvider.filteringCriteria.dateCreatedRange"></ion-checkbox>
+    <ion-label>Specify date range</ion-label> -->
+    <ion-checkbox (click)="emitApplyFiltersToClearDateCreatedRange($event)" color="vistra-white" [(ngModel)]="apiSettingsProvider.filteringCriteria.dateCreatedRange"></ion-checkbox>
+    <ion-label class="toggle-label" (click)="emitApplyFiltersToClearDateCreatedRange($event)">Specify date range</ion-label>
+  </ion-item>
+  <ion-item class="date-range-item" *ngIf="filterGroupToggle.dateCreated.show && apiSettingsProvider.filteringCriteria.dateCreatedRange" item-end>
+    <!-- <ion-label class="date-label" style="margin-top: 5px; margin-bottom: 5px;">Start</ion-label> -->
+    <!-- <ion-input placeholder="DD/MM/YYYY" type="date" min="01/01/1980" max="01/12/2022" value="01/12/2021"></ion-input> -->
+    <!-- <date-picker (applyFilters)="emitApplyFiltersForDateCreatedRange($event)"></date-picker> -->
+    <ion-label>
+      {{ searchProvider.dateCreatedLabel }}
+    </ion-label>
+    <!-- <input [textMask]="{mask: dateInputMask}" [(ngModel)]="apiSettingsProvider.filteringCriteria.dateCreatedRange" type="text"/> -->
+  </ion-item>
+  <!-- <ion-item class="date-range-item" *ngIf="filterGroupToggle.dateCreated.show && apiSettingsProvider.filteringCriteria.dateCreatedRange">
+    <ion-label class="date-label" style="margin-top: 5px; margin-bottom: 5px;">Start</ion-label>
+    <ion-datetime displayFormat="DD/MM/YYYY" pickerFormat="DD MMMM YYYY" placeholder="Please select"
+                  [(ngModel)]="apiSettingsProvider.filteringCriteria.dateCreatedRangeStart"
+                   style="padding-top: 5px; padding-bottom: 5px;"></ion-datetime>
+  </ion-item>
+  <ion-item class="date-range-item" *ngIf="filterGroupToggle.dateCreated.show && apiSettingsProvider.filteringCriteria.dateCreatedRange">
+    <ion-label class="date-label">End</ion-label>
+    <ion-datetime displayFormat="DD/MM/YYYY" pickerFormat="DD MMMM YYYY" placeholder="Please select" [min]="apiSettingsProvider.filteringCriteria.dateCreatedRangeStart"
+                  [(ngModel)]="apiSettingsProvider.filteringCriteria.dateCreatedRangeEnd"></ion-datetime>
+  </ion-item>
+  <ion-item *ngIf="filterGroupToggle.dateCreated.show && apiSettingsProvider.filteringCriteria.dateCreatedRange">
+    <ion-buttons item-end>
+      <button ion-button outline small (click)="emitApplyFiltersForDateCreatedRange()">Apply</button>
+    </ion-buttons>
+  </ion-item> -->
+  <!-- <ion-item class="grouped-checkbox">
+    <ion-checkbox color="vistra-white" [(ngModel)]="apiSettingsProvider.filteringCriteria.dateCreatedRange"></ion-checkbox>
+    <ion-label>Specify date range</ion-label>
+  </ion-item>
+  <ion-item *ngIf="apiSettingsProvider.filteringCriteria.dateCreatedRange">
+    <ion-label class="date-label">Start</ion-label>
+    <ion-datetime displayFormat="DD/MM/YYYY" pickerFormat="DD MMMM YYYY" [(ngModel)]="apiSettingsProvider.filteringCriteria.dateCreatedRange.start" placeholder="Please select"></ion-datetime>
+  </ion-item>
+  <ion-item *ngIf="apiSettingsProvider.filteringCriteria.dateCreatedRange">
+    <ion-label class="date-label">End</ion-label>
+    <ion-datetime displayFormat="DD/MM/YYYY" pickerFormat="DD MMMM YYYY" [(ngModel)]="apiSettingsProvider.filteringCriteria.dateCreatedRange.end" placeholder="Please select"></ion-datetime>
+  </ion-item> -->
+  <hr>
+  <ion-item class="filter-group-header-with-toggle grouped-checkbox">
+    <ion-label><strong>Date Modified</strong></ion-label>
+    <ion-buttons item-end>
+      <button ion-button small clear icon-only (click)="toggleGroup('dateModified')">
+        <ion-icon name="remove" color="vistra-grey" *ngIf="filterGroupToggle.dateModified.show"></ion-icon>
+        <ion-icon name="add" color="vistra-grey" *ngIf="!filterGroupToggle.dateModified.show"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-item>
+  <!-- <strong class="left-panel-subheader overlined-header">Date Modified</strong> -->
+  <ion-item class="grouped-checkbox" *ngIf="filterGroupToggle.dateModified.show">
+    <ion-checkbox (click)="emitApplyFilters()" color="vistra-white" [(ngModel)]="apiSettingsProvider.filteringCriteria.modifiedLastSixMonths" id="chkModifiedLastSixMonths"></ion-checkbox>
+    <ion-label (click)="emitApplyFilters()">Modified in the last 6 months</ion-label>
+  </ion-item>
+  <ion-item class="grouped-checkbox" *ngIf="filterGroupToggle.dateModified.show">
+    <ion-checkbox (click)="emitApplyFilters()" color="vistra-white" [(ngModel)]="apiSettingsProvider.filteringCriteria.modifiedLastYear" id="chkModifiedLastYear"></ion-checkbox>
+    <ion-label (click)="emitApplyFilters()">Modified in the last year</ion-label>
+  </ion-item>
+  <!-- <ion-item class="grouped-checkbox" *ngIf="filterGroupToggle.dateModified.show">
+    <ion-checkbox color="vistra-white" [checked]="'apiSettingsProvider.filteringCriteria.dateModifiedRange'" (ionChange)="emitApplyFiltersToClearDateModifiedRange($event)" [(ngModel)]="apiSettingsProvider.filteringCriteria.dateModifiedRange"></ion-checkbox>
+    <ion-label>Specify date range</ion-label>
+  </ion-item> -->
+  <ion-item class="grouped-checkbox" *ngIf="filterGroupToggle.dateModified.show">
+    <!-- <ion-checkbox color="vistra-white" [checked]="'apiSettingsProvider.filteringCriteria.dateModifiedRange'" (ionChange)="emitApplyFiltersToClearDateModifiedRange($event)" [(ngModel)]="apiSettingsProvider.filteringCriteria.dateModifiedRange"></ion-checkbox> -->
+    <ion-checkbox (click)="emitApplyFiltersToClearDateModifiedRange($event)" color="vistra-white" [(ngModel)]="apiSettingsProvider.filteringCriteria.dateModifiedRange"></ion-checkbox>
+    <ion-label class="toggle-label" (click)="emitApplyFiltersToClearDateModifiedRange($event)">Specify date range</ion-label>
+  </ion-item>
+  <ion-item class="date-range-item" *ngIf="filterGroupToggle.dateModified.show && apiSettingsProvider.filteringCriteria.dateModifiedRange">
+    <!-- <date-picker (applyFilters)="emitApplyFiltersForDateModifiedRange($event)"></date-picker> -->
+    {{ searchProvider.dateModifiedLabel }}
+  </ion-item>
+  <!-- <ion-item class="date-range-item" *ngIf="filterGroupToggle.dateModified.show && apiSettingsProvider.filteringCriteria.dateModifiedRange">
+    <ion-label class="date-label">End</ion-label>
+    <ion-datetime displayFormat="DD/MM/YYYY" pickerFormat="DD MMMM YYYY" placeholder="Please select" [min]="apiSettingsProvider.filteringCriteria.dateModifiedRangeStart"
+                  [(ngModel)]="apiSettingsProvider.filteringCriteria.dateModifiedRangeEnd"></ion-datetime>
+  </ion-item>
+  <ion-item *ngIf="filterGroupToggle.dateModified.show && apiSettingsProvider.filteringCriteria.dateModifiedRange">
+    <ion-buttons item-end>
+      <button ion-button outline small (click)="emitApplyFiltersForDateModifiedRange()">Apply</button>
+    </ion-buttons>
+  </ion-item> -->
+  <!-- <strong class="left-panel-subheader overlined-header">Application</strong> -->
+  <hr>
+  <ion-item class="filter-group-header-with-toggle grouped-checkbox">
+    <ion-label><strong>Application</strong></ion-label>
+    <ion-buttons item-end>
+      <button ion-button small clear icon-only (click)="toggleGroup('application')">
+        <ion-icon name="remove" color="vistra-grey" *ngIf="filterGroupToggle.application.show"></ion-icon>
+        <ion-icon name="add" color="vistra-grey" *ngIf="!filterGroupToggle.application.show"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-item>
+  <ion-item class="grouped-checkbox" *ngIf="filterGroupToggle.application.show">
+    <ion-checkbox (click)="emitApplyFilters()" color="vistra-white" [(ngModel)]="apiSettingsProvider.filteringCriteria.dmsVForce" id="chkDmsVForce"></ion-checkbox>
+    <ion-label (click)="emitApplyFilters()">VForce</ion-label>
+  </ion-item>
+  <ion-item class="grouped-checkbox" *ngIf="filterGroupToggle.application.show">
+    <ion-checkbox (click)="emitApplyFilters()" color="vistra-white" [(ngModel)]="apiSettingsProvider.filteringCriteria.dmsVPoint"></ion-checkbox>
+    <ion-label (click)="emitApplyFilters()">VPoint</ion-label>
+  </ion-item>
+  <ion-item class="grouped-checkbox" *ngIf="filterGroupToggle.application.show">
+    <ion-checkbox (click)="emitApplyFilters()" color="vistra-white" [(ngModel)]="apiSettingsProvider.filteringCriteria.dmsVEnterprise"></ion-checkbox>
+    <ion-label (click)="emitApplyFilters()">VEnterprise</ion-label>
+  </ion-item>
+  <ion-item class="grouped-checkbox" *ngIf="filterGroupToggle.application.show">
+    <ion-checkbox (click)="emitApplyFilters()" color="vistra-white" [(ngModel)]="apiSettingsProvider.filteringCriteria.dmsSharepoint" id="chkDmsSharepoint"></ion-checkbox>
+    <ion-label (click)="emitApplyFilters()">SharePoint</ion-label>
+  </ion-item>
+  <ion-item class="grouped-checkbox" *ngIf="filterGroupToggle.application.show">
+    <ion-checkbox (click)="emitApplyFilters()" color="vistra-white" [(ngModel)]="apiSettingsProvider.filteringCriteria.dmsIManage"></ion-checkbox>
+    <ion-label (click)="emitApplyFilters()">iManage</ion-label>
+  </ion-item>
+  <!-- <ion-item class="grouped-checkbox">
+    <ion-checkbox color="vistra-white" [(ngModel)]="apiSettingsProvider.filteringCriteria.dmsOther" id="chkDmsOther"></ion-checkbox>
+    <ion-label>Other</ion-label>
+  </ion-item> -->
+  <!-- <strong class="left-panel-subheader overlined-header">Document Type</strong> -->
+  <hr>
+  <ion-item class="filter-group-header-with-toggle grouped-checkbox">
+    <ion-label><strong>File Format</strong></ion-label>
+    <ion-buttons item-end>
+      <button ion-button small clear icon-only (click)="toggleGroup('documentType')">
+        <ion-icon name="remove" color="vistra-grey" *ngIf="filterGroupToggle.documentType.show"></ion-icon>
+        <ion-icon name="add" color="vistra-grey" *ngIf="!filterGroupToggle.documentType.show"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-item>
+  <ion-item class="grouped-checkbox" *ngIf="filterGroupToggle.documentType.show">
+    <ion-checkbox (click)="emitApplyFilters()" color="vistra-white" [(ngModel)]="apiSettingsProvider.filteringCriteria.docTypeWord" id="chkDocTypeWord"></ion-checkbox>
+    <ion-label (click)="emitApplyFilters()">Word document</ion-label>
+  </ion-item>
+  <ion-item class="grouped-checkbox" *ngIf="filterGroupToggle.documentType.show">
+    <ion-checkbox (click)="emitApplyFilters()" color="vistra-white" [(ngModel)]="apiSettingsProvider.filteringCriteria.docTypeExcel" id="chkDocTypeExcel"></ion-checkbox>
+    <ion-label (click)="emitApplyFilters()">Excel document</ion-label>
+  </ion-item>
+  <ion-item class="grouped-checkbox" *ngIf="filterGroupToggle.documentType.show">
+    <ion-checkbox (click)="emitApplyFilters()" color="vistra-white" [(ngModel)]="apiSettingsProvider.filteringCriteria.docTypePowerpoint" id="chkDocTypePowerPoint"></ion-checkbox>
+    <ion-label (click)="emitApplyFilters()">PowerPoint</ion-label>
+  </ion-item>
+  <ion-item class="grouped-checkbox" *ngIf="filterGroupToggle.documentType.show">
+    <ion-checkbox (click)="emitApplyFilters()" color="vistra-white" [(ngModel)]="apiSettingsProvider.filteringCriteria.docTypePdf" id="chkDocTypePdf"></ion-checkbox>
+    <ion-label (click)="emitApplyFilters()">PDF</ion-label>
+  </ion-item>
+  <hr *ngIf="apiSettingsProvider.filteringCriteria.customFilter">
+  <ion-item class="filter-group-header-with-toggle grouped-checkbox" *ngIf="apiSettingsProvider.filteringCriteria.customFilter">
+    <ion-label><strong>Advanced Filter</strong></ion-label>
+  </ion-item>
+  <ion-item class="grouped-checkbox" *ngIf="apiSettingsProvider.filteringCriteria.customFilter">
+    <ion-checkbox (click)="clearAdvancedFilter()" color="vistra-white" id="chkAdvancedFilter" [checked]="apiSettingsProvider.filteringCriteria.customFilter"></ion-checkbox>
+    <ion-label (click)="clearAdvancedFilter()">
+      {{ apiSettingsProvider.filteringCriteria.customFilterFieldName }} = "{{ apiSettingsProvider.filteringCriteria.customFilterFieldValue }}"
+    </ion-label>
+  </ion-item>
+  <ion-item class="filter-buttons">
+    <button ion-button small outline color="vistra-grey" class="filtering-button filtering-button-left" (click)="emitResetFilters()" id="btnAdvancedfilters">
+      Reset filters
+    </button>
+    <button ion-button small color="vistra-red" class="filtering-button filtering-button-left" (click)="emitApplyAdvancedFilters()" id="btnResetfilters" icon-end>
+      Advanced filters
+      <ion-icon name="options"></ion-icon>
+    </button>
+    <!-- <button ion-button small color="vistra-red" class="filtering-button filtering-button-right" (click)="emitApplyFilters()" id="btnApplyfilters">
+      Apply filters
+    </button> -->
+    <!-- <button ion-button small color="vistra-red" class="filtering-button filtering-button-right" (click)="emitSelectAllFilters()" id="btnSelectAllfilters">
+      Select all
+    </button> -->
+  </ion-item>
+
+</ion-list>

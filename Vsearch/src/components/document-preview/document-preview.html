@@ -1,0 +1,94 @@
+<ion-list no-lines class="preview-panel">
+  <!-- <ion-item-divider style="text-align: end; border-bottom: 0px;">
+    <button ion-button small clear item-end color="vistra-grey" class="preview-buttons" (click)="emitClosePreview()">
+      <ion-icon icon-only name="close"></ion-icon>
+    </button>
+  </ion-item-divider> -->
+  <ion-list-header class="preview-list-header">{{ searchProvider.selectedDocument.title }}
+    <button ion-button small clear item-end color="vistra-grey" class="preview-buttons" (click)="close()">
+      <ion-icon icon-only name="close"></ion-icon>
+    </button>
+  </ion-list-header>
+  <ion-item-divider>Metadata Information</ion-item-divider>
+  <ion-item style="background-color: transparent;">
+    <strong>Author:</strong> {{ searchProvider.selectedDocument.author }}
+  </ion-item>
+  <ion-item style="background-color: transparent;">
+    <strong>Date Created:</strong> <span *ngIf="searchProvider.selectedDocument.createdAt !='N/A'">{{ searchProvider.selectedDocument.createdAt | date: 'dd/MM/yyyy'}} at {{ searchProvider.selectedDocument.createdAt | date: 'HH:mm'}} GMT</span>
+  </ion-item>
+  <ion-item style="background-color: transparent;">
+    <strong>Date Modified:</strong> <span *ngIf="searchProvider.selectedDocument.modifiedAt !='N/A'">{{ searchProvider.selectedDocument.modifiedAt | date: 'dd/MM/yyyy'}} at {{ searchProvider.selectedDocument.modifiedAt | date: 'HH:mm'}} GMT</span>
+  </ion-item>
+  <ion-item style="background-color: transparent;">
+    <strong>Client Code/Company No.:</strong> {{ searchProvider.selectedDocument.clientCode }}
+  </ion-item>
+  <ion-item style="background-color: transparent;">
+    <strong>Client Name:</strong> {{ searchProvider.selectedDocument.clientName }}
+  </ion-item>
+  <ion-item style="background-color: transparent;">
+    <strong>Jurisdiction:</strong> {{ searchProvider.selectedDocument.jurisdiction }}
+  </ion-item>
+  <ion-item style="background-color: transparent;">
+    <strong>Subject:</strong> {{ searchProvider.selectedDocument.subject }}
+  </ion-item>
+  <ion-item style="background-color: transparent;">
+    <strong>Description:</strong> {{ searchProvider.selectedDocument.description }}
+  </ion-item>
+  <ion-item style="background-color: transparent;">
+    <strong>Recipients:</strong> {{ searchProvider.selectedDocument.recipients }}
+  </ion-item>
+  <ion-item style="background-color: transparent;">
+    <strong>Document Classification:</strong> {{ searchProvider.selectedDocument.classification }}
+  </ion-item>
+  <ion-item style="background-color: transparent;">
+    <strong>Review Date:</strong> {{ searchProvider.selectedDocument.reviewDate }}
+  </ion-item>
+  <ion-item style="background-color: transparent;">
+    <strong>Register Filing:</strong> {{ searchProvider.selectedDocument.registerFiling }}
+  </ion-item>
+  <ion-item style="background-color: transparent;">
+    <strong>Expiry Date:</strong> {{ searchProvider.selectedDocument.documentExpiry }}
+  </ion-item>
+  <ion-item style="background-color: transparent;">
+    <strong>Retention:</strong> {{ searchProvider.selectedDocument.retention }}
+  </ion-item>
+  <ion-item style="background-color: transparent;">
+    <strong>Vistra:</strong> {{ searchProvider.selectedDocument.taxLevel0 }}
+  </ion-item>
+  <ion-item style="background-color: transparent;">
+    <strong>Internal / External:</strong> {{ searchProvider.selectedDocument.taxLevel1 }}
+  </ion-item>
+  <ion-item style="background-color: transparent;">
+    <strong>Sector / Business Unit:</strong> {{ searchProvider.selectedDocument.taxLevel2 }}
+  </ion-item>
+  <ion-item style="background-color: transparent;">
+    <strong>Customer / Department:</strong> {{ searchProvider.selectedDocument.taxLevel3 }}
+  </ion-item>
+  <ion-item style="background-color: transparent;">
+    <strong>Entity / Team:</strong> {{ searchProvider.selectedDocument.taxLevel4 }}
+  </ion-item>
+  <ion-item style="background-color: transparent;">
+    <strong>Folder:</strong> {{ searchProvider.selectedDocument.taxLevel5 }}
+  </ion-item>
+  <ion-item style="background-color: transparent;">
+    <strong>Sub Folder:</strong> {{ searchProvider.selectedDocument.taxLevel6 }}
+  </ion-item>
+  <ion-item style="background-color: transparent;">
+    <strong>Document Type:</strong> {{ searchProvider.selectedDocument.taxLevel7 }}
+  </ion-item>
+  <ion-item style="background-color: transparent;">
+    <strong>Source DMS:</strong> {{ searchProvider.selectedDocument.dmsName }}
+  </ion-item>
+  <ion-item style="background-color: transparent;">
+    <strong>Language:</strong> {{ searchProvider.selectedDocument.language }}
+  </ion-item>
+  <ion-item style="background-color: transparent;">
+    <strong>Format:</strong> {{ searchProvider.selectedDocument.format }}
+  </ion-item>
+  <ion-item style="text-align: center; border-width: 0px !important;">
+    <button ion-button small color="vistra-red" class="preview-buttons" (click)="close()">Close</button>
+  </ion-item>
+  <!-- <ion-item style="visibility: hidden;">
+    <strong>&nbsp;</strong>
+  </ion-item> -->
+</ion-list>

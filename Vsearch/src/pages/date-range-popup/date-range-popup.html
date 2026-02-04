@@ -1,0 +1,90 @@
+<ion-header no-border>
+  <ion-toolbar transparent>
+    <ion-title class="date-picker-heading">Choose date range</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding *ngIf="!utils.isIe11">
+  <ion-grid>
+    <form [formGroup]="rangeForm" class="range-form">
+      <ion-row class="input-row" style="margin-bottom: 3px;">
+        <ion-col class="range-label">Start:</ion-col>
+        <ion-col>
+          <input formControlName="startDD" class="dd-input" size="3" type="number" placeholder="DD" min="1" max="31" />
+        </ion-col>
+        <ion-col>
+          <input formControlName="startMM" class="mm-input" size="3" type="number" placeholder="MM" min="1" max="12" />
+        </ion-col>
+        <ion-col col-4>
+          <input formControlName="startYYYY" size="5" type="number" placeholder="YYYY" min="1970" max="2022" class="yyyy-input" />
+        </ion-col>
+      </ion-row>
+      <ion-row class="input-row" style="margin-top: 3px;">
+        <ion-col class="range-label">
+            End:
+        </ion-col>
+        <ion-col>
+          <input formControlName="endDD" class="dd-input" size="3" type="number" placeholder="DD" min="1" max="31" />
+        </ion-col>
+        <ion-col>
+          <input formControlName="endMM" class="mm-input" size="3" type="number" placeholder="MM" min="1" max="12" />
+        </ion-col>
+        <ion-col col-4>
+          <input formControlName="endYYYY" size="5" type="number" placeholder="YYYY" min="1970" max="2022" class="yyyy-input" />
+        </ion-col>
+      </ion-row>
+      <ion-row class="button-row">
+        <ion-col>
+          <button ion-button clear small color="vistra-grey" (click)="exit(null)">Cancel</button>
+          <button ion-button small (click)="emitApplyFilters()" [disabled]="!rangeForm.valid" class="apply-button">Apply</button>
+        </ion-col>
+      </ion-row>
+      </form>
+  </ion-grid>
+</ion-content>
+
+<ion-content padding *ngIf="utils.isIe11" class="ie11-content">
+  <ion-grid>
+    <form [formGroup]="rangeForm" class="range-form">
+      <table>
+      <tr class="input-row" style="margin-bottom: 3px;">
+        <td class="range-label">Start:</td>
+        <td>
+          <input formControlName="startDD" class="dd-input" size="3" type="number" placeholder="DD" min="1" max="31" />
+        </td>
+        <td>
+          <input formControlName="startMM" class="mm-input" size="3" type="number" placeholder="MM" min="1" max="12" />
+        </td>
+        <td>
+          <input formControlName="startYYYY" size="5" type="number" placeholder="YYYY" min="1970" max="2022" class="yyyy-input" />
+        </td>
+      </tr>
+      <tr class="input-row" style="margin-top: 3px;">
+        <td class="range-label">
+            End:
+        </td>
+        <td>
+          <input formControlName="endDD" class="dd-input" size="3" type="number" placeholder="DD" min="1" max="31" />
+        </td>
+        <td>
+          <input formControlName="endMM" class="mm-input" size="3" type="number" placeholder="MM" min="1" max="12" />
+        </td>
+        <td>
+          <input formControlName="endYYYY" size="5" type="number" placeholder="YYYY" min="1970" max="2022" class="yyyy-input" />
+        </td>
+      </tr>
+      <tr class="button-row">
+        <td>&nbsp;</td>
+        <td>
+          <button ion-button clear small color="vistra-grey" (click)="exit(null)">Cancel</button>
+        </td>
+        <td>
+          <button ion-button small (click)="emitApplyFilters()" [disabled]="!rangeForm.valid"
+            class="apply-button">Apply</button>
+        </td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+      </form>
+  </ion-grid>
+</ion-content>

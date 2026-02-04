@@ -1,0 +1,42 @@
+[
+  {
+    "searchPhrase": "Australia",
+    "expect": {
+      "unfiltered": 73,
+      "author": {
+        "me": 73,
+        "others": 0
+      },
+      "created": {
+        "lastSixMonths": 73,
+        "lastYear": 73,
+        "customRange": {
+          "start": "",
+          "end": ""
+        }
+      },
+      "modified": {
+        "lastSixMonths": 73,
+        "lastYear": 73,
+        "customRange": {
+          "start": "",
+          "end": ""
+        }
+      },
+      "sourceDMS": {
+        "vForce": 0,
+        "vPoint": 0,
+        "vEnterprise": 0,
+        "sharePoint": 73,
+        "iManage": 0,
+        "other": 0
+      },
+      "documentType": {
+        "word": 0,
+        "excel": 0,
+        "powerPoint": 0,
+        "pdf": 71
+      }
+    }
+  }
+]

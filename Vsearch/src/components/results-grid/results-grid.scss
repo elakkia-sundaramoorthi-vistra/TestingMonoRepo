@@ -1,0 +1,113 @@
+results-grid {
+  .container-grid {
+    height: 100%;
+  }
+  .results-col-summary-col {
+    padding: 0px;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .results-col-result-col {
+    padding: 0px;
+    height: 100%;
+  }
+  .results-grid {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 100%;
+  }
+  /* .results-grid ion-row {
+    border-width: 1px;
+    border-style: solid;
+  } */
+  .results-scroll-area {
+    // overflow-y: scroll;
+    height: 100%;
+  }
+  .summary-panel {
+    height: 100%;
+    background-color: transparent;
+    border-radius: 10px;
+    margin: 0px;
+  }
+  .summary-panel ion-buttons {
+    display: inline;
+  }
+  .summary-panel ion-label {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .summary-panel ion-grid {
+    padding-top: 0px;
+    padding-bottom: 5px;
+  }
+  .summary-panel ion-col {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .summary-panel .results-per-page {
+    float: right;
+  }
+  .summary-panel ion-item {
+    background-color: transparent;
+  }
+  .summary-panel .button-inner {
+    text-transform: none;
+  }
+  .summary-panel ion-note {
+    color: color($colors, vistra-grey, base);
+    font-size: smaller;
+  }
+  .summary-panel .pagination-controls {
+    color: color($colors, vistra-grey, base);
+  }
+  .summary-panel .pagination-controls:hover {
+    text-decoration: underline;
+  }
+  pagination-controls ul {
+    display: inline-block;
+  }
+  .ngx-pagination .current {
+    background-color: color($colors, vistra-grey, base);
+  }
+  .pagination-logo {
+    text-align: center;
+  }
+  .pagination-logo img {
+    width: 20%;
+  }
+  .pagination-panel ion-label{
+    text-align: center;
+  }
+  .pagination-panel a {
+    color:  color($colors, vistra-grey, base);
+    padding-right: 5px;
+  }
+  .pagination-panel .current-page {
+    color:  color($colors, vistra-red, base);
+    text-decoration: underline;
+  }
+}
+.copy-url-alert .alert-wrapper {
+  max-width: unset;
+  width: 50%;
+}
+.copy-url-alert strong {
+  color: color($colors, vistra-red, base);
+}
+.copy-url-alert input {
+ border-bottom: 1px solid color($colors, vistra-light-grey, base) !important;
+ //color: color($colors, vistra-green, base);
+}
+.copy-url-alert-primary-button {
+  /* border-width: 1px;
+  border-style: solid; */
+  color: #fff !important;
+  background-color: #BF0D3E !important;
+}
+.copy-url-alert-cancel-button {
+  color: color($colors, vistra-grey, base) !important;
+}
+.results-ion-list-header ion-label {
+  margin-top: 0;
+}

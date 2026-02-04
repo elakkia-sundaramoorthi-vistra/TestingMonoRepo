@@ -1,0 +1,22 @@
+page-filtering-panel {
+
+}
+.filtering-popover {
+  .popover-content {
+    width: 60%;
+  }
+  ion-checkbox {
+    margin-right: 9px !important;
+  }
+  ion-label {
+    white-space: break-spaces;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .filtering-popover {
+    display: none !important;
+  }
+}
+.checkbox-md .checkbox-icon {
+  border-color: #787878 !important;
+}

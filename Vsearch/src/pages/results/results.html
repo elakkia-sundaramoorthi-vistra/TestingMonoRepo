@@ -1,0 +1,204 @@
+<ion-header no-border #header>
+  <ion-toolbar transparent class="island-grey">
+    <!-- <ion-buttons left (click)="goToHomePage()"> -->
+    <ion-buttons left routerLink="/">
+      <button ion-button class="hide-on-small-devices">
+        <img src="../../assets/imgs/VSearch Logo.png" class="logo">
+      </button>
+      <button ion-button class="hide-on-large-devices">
+        <img src="../../assets/imgs/v.png" class="logo">
+      </button>
+    </ion-buttons>
+    <!-- <ion-searchbar #q (keyup.enter)="search(q.value)"></ion-searchbar> -->
+    <ion-searchbar #q (keyup.enter)="search(q.value)" [(ngModel)]="searchProvider.searchKeyword"></ion-searchbar>
+    <ion-buttons right class="help-text hide-on-small-devices">
+      <button ion-button>
+        <span class="help-title">
+          Can’t find what you are looking for?<br>
+        </span>
+        <span style="display: contents;">
+          Try using more specific words and phrases
+        </span><br>
+        <span style="display: contents;">
+          to refine your search
+        </span>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content #ionContent fullscreen="true">
+  <results-grid (showPreview)="revealDocumentPreview($event)" (closePreview)="closeDocumentPreview()"></results-grid>
+  <ion-grid #containerGrid class="container-grid">
+    <ion-row>
+      <ion-col #filteringPanel col-3 class="hide-on-small-devices filtering-panel-col">
+        <filtering-panel (applyFilters)="applyElasticSearchFilters()" (resetFilters)="initialiseFilters()"></filtering-panel>
+      </ion-col>
+      <ion-col #resultsPanel cl-4 class="results-panel-col">
+        <div #resultsPanelInner class="results-panel">
+          <ion-list #filteringPanelInner>
+            <!-- <ion-item *ngIf="searchProvider.searchKeyword.length > 0" class="search-keyword-display">
+              Searching "{{searchProvider.searchKeyword}}"
+              <div *ngIf="searchProvider.sortingSettings.title.length > 0" style="display: inline;">
+                (Sorted by <span style="font-weight: normal;">{{ searchProvider.sortingSettings.title }}</span>
+                <ion-icon [name]="searchProvider.sortingSettings.iconName" *ngIf="searchProvider.sortingSettings.iconName?.length > 0"></ion-icon>)
+              </div>
+            </ion-item> -->
+            <ion-list-header class="results-ion-list-header">
+              <Span class="results-header">
+                {{ searchProvider.pagination.totalItems }} results
+              </Span>
+              <ion-spinner name="dots" *ngIf="showSortingSpinner" class="results-header" style="display: contents;"></ion-spinner>
+              <button ion-button small outline color="vistra-grey"
+                      (click)="presentFilteringPopover($event)"
+                      class="search-button hide-on-large-devices" icon-end item-end>
+                Filter
+                <ion-icon name="md-arrow-dropdown"></ion-icon>
+              </button>
+              <button ion-button small outline color="vistra-grey"
+                      (click)="presentSortingPopover($event)"
+                      class="search-button" id="btnSortDropDown" icon-end item-end>
+                Sort results
+                <ion-icon name="md-arrow-dropdown"></ion-icon>
+              </button>
+            </ion-list-header>
+            <!--
+              Pagination quirk: pagination-controls's totalItems adds an additional page.
+              Subtracting resultsPerPage from totalItems in the absence of any clarity about
+              correctly setting totalItems -->
+            <ion-item *ngFor="let result of searchProvider.results | paginate: { itemsPerPage: apiSettingsProvider.pagination.resultsPerPage, currentPage: apiSettingsProvider.pagination.pageNumber, totalItems: (apiSettingsProvider.pagination.totalItems) }" class="result-item hover-effect">
+              <h2>
+                <!-- <a (click)="presentPreviewAlert($event, result)"> -->
+                <a (click)="presentThumbnailPopover($event, result)" class="clickable">
+                  {{result.title }}
+                  <ion-icon name="search" *ngIf="result.previewBase64.length > 0" title="Click to view thumbnail" class="thumbnail-icon"></ion-icon>
+                </a>
+              </h2>
+              <!-- <p>
+                <strong>Created date:</strong> {{ result.createdAt | date: 'dd/MM/yyyy'}}
+                <strong>Author:</strong> {{result.author }}
+              </p> -->
+              <p>
+              <strong>Author:</strong> {{result.author }} <strong>Created date:</strong> {{ result.createdAt | date: 'dd/MM/yyyy'}}
+              </p>
+              <p>
+                <strong>Source DMS:</strong> {{ result.dmsName}}
+              </p>
+              <p>
+              <strong>Company/Client Master:</strong> {{ result.clientName }} <strong> Client Code:</strong> {{ result.clientCode}}
+              </p>
+              <button ion-button small clear icon-only color="dark" item-end (click)="presentDocumentPopover($event, result, 'large')" class="hide-on-small-devices">
+                <ion-icon name="ios-more"></ion-icon>
+              </button>
+              <button ion-button small clear icon-only color="dark" item-end (click)="presentDocumentPopover($event, result, 'small')" class="hide-on-large-devices">
+                <ion-icon name="ios-more"></ion-icon>
+              </button>
+            </ion-item>
+          </ion-list>
+        </div>
+        <ion-list #summaryPanel no-lines class="summary-panel">
+          <ion-item>
+            <!-- <ion-note *ngIf='searchProvider.targetSystem == "ALFRESCO"' id="pageNumber">
+              {{ searchProvider.pagination.count + searchProvider.pagination.skipCount }} of {{ searchProvider.pagination.totalItems }}
+            </ion-note>
+            <ion-buttons left *ngIf='searchProvider.targetSystem == "ELASTIC"' id="pageNumber">
+              <button ion-button clear color="vistra-grey">
+              {{ searchProvider.results.length + searchProvider.pagination.skipCount }} of {{ apiSettingsProvider.pagination.totalItems }}
+              </button>
+            </ion-buttons>
+            <pagination (goToNext)="goToNextPage()" (goToPrevious)="goToPreviousPage()"
+                          (goToPage)="goToPage($event)" style="display: inline-block;" color="vistra-grey"></pagination>
+            <ion-buttons end class="results-per-page">
+
+              <button ion-button small clear color="vistra-grey" icon-end (click)="presentResultsPerPagePopover($event)">
+                Showing {{ apiSettingsProvider.pagination.resultsPerPage }} results per page
+                <ion-icon name="md-arrow-dropdown"></ion-icon>
+              </button>
+            </ion-buttons> -->
+            <ion-grid>
+              <ion-row align-items-center>
+                <ion-col col-4 style="text-align: left;">
+                  <ion-buttons left *ngIf='searchProvider.targetSystem == "ELASTIC"' id="pageNumber">
+                    <button ion-button clear color="vistra-grey">
+                    {{ apiSettingsProvider.pagination.enumerator }} of {{ apiSettingsProvider.pagination.totalItems }}
+                    </button>
+                  </ion-buttons>
+                </ion-col>
+                <ion-col col-4>
+                  <pagination (goToNext)="goToNextPage()" (goToPrevious)="goToPreviousPage()"
+                                (goToPage)="goToPage($event)" style="display: inline-block;"
+                                color="vistra-grey"></pagination>
+                </ion-col>
+                <ion-col col-4 style="text-align: right;">
+                  <ion-buttons end class="results-per-page">
+
+                    <button ion-button small clear color="vistra-grey" icon-end (click)="presentResultsPerPagePopover($event)">
+                      <!-- Showing {{ searchProvider.paginationSettings.resultsPerPage }} results per page -->
+                      Showing {{ apiSettingsProvider.pagination.resultsPerPage }} results per page
+                      <ion-icon name="md-arrow-dropdown"></ion-icon>
+                    </button>
+                  </ion-buttons>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-item>
+        </ion-list>
+        <ion-list no-lines style="display: none;">
+          <ion-item class="pagination-logo">
+            <img src="../../assets/imgs/VSearch Logo.png">
+          </ion-item>
+        </ion-list>
+        <!-- <ion-list no-lines class="pagination-panel" *ngIf='searchProvider.paginationSettings.pages.length > 0'>
+          <ion-item>
+            <ion-note>
+             <a (click)="goToPreviousPage()">Previous</a>
+            </ion-note>
+            <ion-note>
+             <a *ngFor="let page of searchProvider.paginationSettings.pages" (click)='goToPage(page)'>
+                <span *ngIf='page == searchProvider.paginationSettings.pageNumber' class="current-page">
+                 {{ page }}
+                </span>
+              <span *ngIf='page != searchProvider.paginationSettings.pageNumber'>
+                 {{ page }}
+              </span>
+             </a>
+            </ion-note>
+            <ion-note>
+             <a (click)='goToNextPage()'>Next</a>
+            </ion-note>
+          </ion-item>
+        </ion-list> -->
+      </ion-col>
+      <ion-col style="height: 100%; display: none;" class="hide-on-small-devices">
+        <ion-list no-lines class="right-panel">
+          <ion-item style="background-color: transparent;">
+            Document Preview
+          </ion-item>
+        </ion-list>
+      </ion-col>
+      <ion-col style="height: 100%;" class="hide-on-small-devices" *ngIf="showPreview">
+        <document-preview [document]="searchProvider.selectedDocument" (closePreview)="closeDocumentPreview()"></document-preview>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <!-- <search-results-mini [items]="'results'" (itemSelected)="presentPopover($event)"></search-results-mini> -->
+<!--   <br>
+  <br>
+  <br> -->
+</ion-content>
+
+<!-- <ion-footer #footer style="display: none;"> -->
+<!-- <ion-footer #footer no-border>
+  <ion-toolbar transparent style="padding-top: 0px; padding-bottom: 0px; background-color: transparent;">
+    <ion-title><img src="../../assets/imgs/VIP footer white.png" class="footer-img">
+      <button ion-button style="width: 50%; margin-top: 0px; margin-bottom: 0px;">Test</button>
+    </ion-title>
+  </ion-toolbar>
+</ion-footer> -->
+<ion-footer #footer>
+  <ion-grid class="footer-grid" color="vistra-grey">
+    <ion-row>
+      <ion-col>© Vistra 2022</ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>

@@ -1,0 +1,65 @@
+filtering-panel {
+  ion-list ion-item ion-label {
+    font-size: 1.4rem;
+  }
+  .filter-group-header-with-toggle {
+    height: 20px;
+    border-top: 1px solid #C0C0C0;
+    // margin-top: 7%;
+  }
+  .filter-group-header-with-toggle ion-label {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+  .filter-group-header-with-toggle strong{
+    padding-top: 0px !important;
+    margin-left: 4px;
+    font-size: 1.4rem;
+  }
+  hr {
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 25px;
+  }
+  .date-range-item {
+    min-height: 10px;
+  }
+  .date-range-item ion-datetime {
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+  }
+  .date-range-item ion-label {
+    margin-top: 3px;
+    margin-bottom: 0px;
+    padding-left: 29px;
+  }
+  .date-range-item .datetime-text {
+    font-size: 12px;
+  }
+  .date-range-item ion-input {
+    text-align: right;
+    font-size: 1.2rem;
+    background-color: white;
+    padding-top: 4px;
+    padding-bottom: 3px;
+    border-radius: 5px;
+  }
+  .date-range-popover-content {
+    width: max-content;
+  }
+  .date-range-popover-content-ie11 .popover-content {
+    display: table;
+  }
+  /* .toggle-label {
+    padding-left: 29px;
+  } */
+}
+.apply-button {
+  background-color:  color($colors, vistra-red, base) !important;
+  color:  color($colors, vistra-white, base) !important;
+  border-radius: 6px !important;
+}
+.advanced-filter-prompt .alert-message {
+  overflow-y: auto;
+}

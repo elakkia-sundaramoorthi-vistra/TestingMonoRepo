@@ -1,0 +1,28 @@
+page-error {
+    .toolbar-title-md {
+        color: color($colors, vistra-red, base) !important;
+        text-align: center;
+        white-space: normal;
+    }
+    .island-grey {
+        background-color: #dcdcdc;
+    }
+    .island-grey .checkbox-icon {
+        border-color: #dcdcdc;
+    }
+    .col-logo {
+        top: 4px;
+        max-width: 167px;
+    }
+    .v-logo {
+        height: 32px;
+    }
+    .copyright-strip {
+        background-color: color($colors, vistra-grey, base) !important;
+        width: 100%;
+        color: color($colors, vistra-white, base);
+    }
+    .copyright-strip ion-row {
+        text-align: right;
+    }
+}

@@ -1,0 +1,52 @@
+pagination {
+  .current-page {
+    color:  color($colors, vistra-red, base);
+    }
+  .pagination-header {
+    display: inline-block;
+  }
+  .pagination-header-row-hidden {
+    display: none !important;
+  }
+  .pagination-header-row-contiguous {
+    height: 100%;
+  }
+  .pagination-grid .col {
+    padding-left: 0px;
+    padding-right: 0px;
+    /* border-style: solid;
+    border-width: 1px; */
+    //height: 22px; // Caused a witch hunt. Investigate
+    height: 20px;
+  }
+  .page-number-grid {
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+  .page-number-grid img {
+    /* height: 10px;
+    width: 20px; */
+    width: 15px;
+  }
+  .paging-col {
+    padding-top: 5px !important;
+  }
+  .pagination-logo-v {
+    // background-image: url('../../assets/imgs/v.png');
+    color:  #be9310;
+    font-weight: bold;
+  }
+  .pagination-logo-other-alphabets {
+    // background-image: url('../../assets/imgs/v.png');
+    color:  #000000;
+    text-transform: uppercase;
+  }
+  .ie11-img {
+    height: 20px;
+  }
+  .paging-col-ie11 {
+    padding-top: 5px !important;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+}

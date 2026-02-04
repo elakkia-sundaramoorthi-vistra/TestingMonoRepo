@@ -1,0 +1,30 @@
+date-picker {
+  input {
+    font-size: 1em;
+    text-align: center;
+  }
+  select:invalid {
+    color: lightgray;
+  }
+  .dd-input {
+    // width: 100%;
+  }
+  .mm-input {
+    // width: 100%;
+  }
+  .yyyy-input {
+    // width: 100%;
+  }
+  div {
+    text-align: left;
+  }
+  ion-grid {
+    padding-right: 0px !important;
+  }
+  ion-col {
+    padding-right: 0px !important;
+  }
+  .range-label {
+    text-align: right;
+  }
+}

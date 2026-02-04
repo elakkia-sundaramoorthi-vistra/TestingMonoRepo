@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="284"
+   height="52"
+   viewBox="0 0 75.141714 13.758332"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (b8e25be8, 2022-02-05)"
+   sodipodi:docname="vsearch help text.svg"
+   inkscape:export-filename="/Users/siphiwe/dev/vsearch/src/assets/imgs/vsearch_help_text.png"
+   inkscape:export-xdpi="96.040001"
+   inkscape:export-ydpi="96.040001"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="1.5908242"
+     inkscape:cx="59.40317"
+     inkscape:cy="56.260145"
+     inkscape:window-width="1280"
+     inkscape:window-height="703"
+     inkscape:window-x="0"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1"
+     units="px"
+     width="409px" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.70417px;line-height:1.25;font-family:'FS Elliot Pro';-inkscape-font-specification:'FS Elliot Pro';stroke-width:0.264583"
+       x="2.6930819"
+       y="7.9260778"
+       id="text231"><tspan
+         sodipodi:role="line"
+         id="tspan229"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.70417px;font-family:'FS Elliot Pro';-inkscape-font-specification:'FS Elliot Pro';stroke-width:0.264583"
+         x="2.6930819"
+         y="7.9260778">Try using more specific words and phrases </tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.70417px;font-family:'FS Elliot Pro';-inkscape-font-specification:'FS Elliot Pro';stroke-width:0.264583"
+         x="2.6930819"
+         y="12.556292"
+         id="tspan233">to refine your search</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.70417px;line-height:1.25;font-family:'FS Elliot Pro';-inkscape-font-specification:'FS Elliot Pro Bold';stroke-width:0.264583"
+       x="2.6449277"
+       y="3.0393152"
+       id="text18084"><tspan
+         sodipodi:role="line"
+         id="tspan18082"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.70417px;font-family:'FS Elliot Pro';-inkscape-font-specification:'FS Elliot Pro Bold';fill:#bf0d3e;fill-opacity:1;stroke-width:0.264583"
+         x="2.6449277"
+         y="3.0393152">Can’t find what you're looking for?</tspan></text>
+  </g>
+</svg>

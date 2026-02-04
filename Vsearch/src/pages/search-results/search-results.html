@@ -1,0 +1,82 @@
+<ion-header no-border #header>
+  <ion-toolbar #toolbar transparent class="island-grey" *ngIf="!utils.isIe11">
+    <!-- <ion-buttons left (click)="goToHomePage()"> -->
+    <ion-grid class="nav-grid">
+      <ion-row style="height: 100% !important; justify-content: left !important;">
+        <ion-col class="hide-on-small-devices col-logo" routerLink="/">
+          <img src="../../assets/imgs/VSearch Logo.png" class="v-logo">
+        </ion-col>
+        <ion-col class="hide-on-large-devices col-vlogo" routerLink="/">
+          <img src="../../assets/imgs/v.png" class="v-logo">
+        </ion-col>
+        <!-- <ion-searchbar #q (keyup.enter)="search(q.value)"></ion-searchbar> -->
+        <ion-col class="col-searchbar">
+          <ion-searchbar #q (keyup.enter)="search(q.value)" [(ngModel)]="searchProvider.searchKeyword"></ion-searchbar>
+        </ion-col>
+        <ion-col class="help-text hide-on-small-devices col-helptext">
+          <!-- <span class="help-title">
+                  <span>
+                    Try using more specific words and phrases \nto refine your search
+                  </span><br>
+                  <span>
+                    to refine your search
+                  </span>
+                </span> -->
+          <img src="../../assets/imgs/vsearch_help_text.png" style="max-width: none;">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+  <ion-toolbar #toolbar transparent class="island-grey" *ngIf="utils.isIe11">
+    <table class="ie11-toolbar">
+      <tr>
+        <td class="ie11-logo hide-on-small-devices" routerLink="/"><img src="../../assets/imgs/VSearch Logo.png" class="vlogo">
+        </td>
+        <td class="ie11-logo-v hide-on-large-devices" routerLink="/"><img src="../../assets/imgs/v.png" class="vlogo"></td>
+        <td class="ie11-searchbar">
+          <ion-searchbar #q (keyup.enter)="search(q.value)" [(ngModel)]="searchProvider.searchKeyword"></ion-searchbar>
+        </td>
+        <td class="ie11-helptext hide-on-small-devices"><img src="../../assets/imgs/vsearch_help_text.png"></td>
+        </tr>
+    </table>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true">
+  <div>
+
+    <ion-grid class="container-grid">
+      <ion-row>
+        <ion-col col-3 class="hide-on-small-devices filters-col">
+          <filtering-panel (applyFilters)="applyElasticSearchFilters()" (applyAdvancedFilters)="presentAdvancedFilterPopover()" (selectAllFilters)="selectAllFilters()" (resetFilters)="initialiseFilters()"></filtering-panel>
+        </ion-col>
+        <ion-col #resultsPanel cl-4 class="results-col">
+          <results-grid (showPreview)="presentDocumentPreviewPopover($event)" (closePreview)="closeDocumentPreview()"
+                        (showSmallScreenPreview)="presentSmallScreenPreview($event)" (presentSortingPopover)="presentSortingPopover($event)"
+                        (presentFilteringPopover)="presentFilteringPopover()" (changePage)="changePage($event)"
+                        (changeResultsPerPage)="presentResultsPerPagePopover($event)"
+                        [collapsePaginationControls]="showPreview">
+
+          </results-grid>
+        </ion-col>
+        <ion-col style="height: 100%;" class="hide-on-small-devices preview-col" *ngIf="showPreview">
+          <document-preview [document]="searchProvider.selectedDocument" (closePreview)="closeDocumentPreview()"></document-preview>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid class="copyright-strip" color="vistra-grey">
+      <ion-row>
+        <ion-col>© Vistra 2022</ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+<!-- <ion-toolbar class="copyright-strip">
+</ion-toolbar> -->
+</ion-content>
+<!-- <ion-footer #footer>
+  <ion-grid class="footer-grid" color="vistra-grey">
+    <ion-row>
+      <ion-col>© Vistra 2022</ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer> -->

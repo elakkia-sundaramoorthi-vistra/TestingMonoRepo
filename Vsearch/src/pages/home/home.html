@@ -1,0 +1,58 @@
+<ion-header no-border>
+  <ion-navbar transparent *ngIf="!utils.isIe11">
+    <!-- <ion-buttons end style="padding-right: 2%;" class="vistra-logo">
+      <button ion-button>
+        <img src="../../assets/imgs/Vistra Logo White.png" class="logo">
+      </button>
+    </ion-buttons> -->
+    <ion-grid class="vistra-logo">
+      <ion-row>
+        <img src="../../assets/imgs/Vistra Logo.png" class="logo">
+      </ion-row>
+    </ion-grid>
+  </ion-navbar>
+  <ion-navbar transparent *ngIf="utils.isIe11">
+    <table style="border:1px; width:100%">
+      <tr>
+        <td>&nbsp;</td><td>&nbsp;</td>
+        <td style="width: 150px; height:32px; padding-top:10px; padding-right: 40px;"><img src="../../assets/imgs/Vistra Logo.png" class="vlogo"></td>
+      </tr>
+    </table>
+  </ion-navbar>
+  </ion-header>
+
+<ion-content fullscreen="true">
+  <form [formGroup]="searchForm" (ngSubmit)="search($event)" class="search-form">
+    <ion-grid>
+      <ion-row>
+        <img src="../../assets/imgs/VSearch Logo@2x.png" class="search-logo">
+      </ion-row>
+    <ion-row>
+      <ion-input formControlName="searchText" placeholder="Enter your search text...." class="search-input"></ion-input>
+    </ion-row>
+    <ion-row>
+      <button ion-button small color="vistra-red" click="search($event)" class="search-button">Search</button>
+      <!-- <button ion-button small (click)="fetchIManageDocument()" class="search-button">Test</button> -->
+    </ion-row>
+    <!-- <ion-row>
+      Upload <input type="file" id="upload" />
+    </ion-row> -->
+    </ion-grid>
+    </form>
+</ion-content>
+
+<!-- <ion-footer text-center no-border transparent style="display: none;"> -->
+<!-- <ion-footer>
+  <ion-toolbar color="vistra-grey">
+    <ion-title><img src="../../assets/imgs/VIP footer white.png" class="footer-img"></ion-title>
+  </ion-toolbar>
+</ion-footer> -->
+<ion-footer color="vistra-grey">
+  <!-- <ion-grid class="footer-grid" color="vistra-grey">
+    <ion-row justify-content-end>
+      <ion-col col-10>&nbsp;</ion-col>
+      <ion-col col-2 align-self-end>© Vistra 2022</ion-col>
+    </ion-row>
+  </ion-grid> -->
+  <p style="margin-top: 0px;margin-bottom: 0px;padding: 6px; color:white">© Vistra 2022</p>
+</ion-footer>

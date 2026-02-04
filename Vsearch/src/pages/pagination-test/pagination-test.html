@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Pagination Test</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="text-center">
+    <h1>ngx-pagination live demo</h1>
+    <h4><small><a href="https://github.com/michaelbromley/ngx-pagination">GitHub Repo</a></small></h4>
+    <p>A bare-bones demo for your experimenting / bug-reproducing pleasure.</p>
+    <!-- <p>{{ collection.length }} of {{ totalItems }} &mdash; Showing -->
+    <!-- <ion-select [(ngModel)]="resultsPerPage">
+      <ion-option value="nes">10</ion-option>
+      <ion-option value="n64">20</ion-option>
+      <ion-option value="ps">30</ion-option>
+    </ion-select> per page</p> -->
+    <!-- <button ion-button small clear color="vistra-grey" icon-end (click)="presentResultsPerPagePopover($event)">
+      Showing {{ resultsPerPage }} results per page
+      <ion-icon name="md-arrow-dropdown"></ion-icon>
+    </button> -->
+  </div>
+  <!-- <div class="list">
+      <ul>
+        <li *ngFor="let item of collection | paginate: { itemsPerPage: resultsPerPage, currentPage: currentPage, totalItems: totalItems }">{{ item }}</li>
+      </ul>
+
+      <pagination-controls (pageChange)="fetchPageContent($event)"></pagination-controls>
+  </div> -->
+  <ul>
+      <li *ngFor="let item of collection | paginate: { itemsPerPage: itemsPerPage , currentPage: p, totalItems: totalItems }"> {{item.name}} </li>
+    </ul>
+
+    <pagination-controls (pageChange)="getPage($event)"></pagination-controls>
+</ion-content>

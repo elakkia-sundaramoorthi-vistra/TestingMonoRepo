@@ -1,0 +1,69 @@
+page-date-range-popup {
+  ion-toolbar {
+    height: 40px;
+  }  
+  ion-content {
+    padding-top: 0px !important;
+    // padding-bottom: 0px;
+  }
+  .date-picker-heading .toolbar-title {
+    color:  color($colors, vistra-red, base) !important;
+  }
+  ion-grid, scroll-content {
+    width: max-content !important;
+  }
+  .button-row {
+    text-align: center;
+  }
+}
+.date-range-popover-content .popover-content {
+  width: max-content;
+}
+.date-range-popover-content .scroll-content {
+  overflow-y: auto;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  background-color:  color($colors, vistra-lighter-grey, base) !important;
+  border-radius: 5px;
+}
+.date-range-popover-content .input-row {
+  text-align: right;
+}
+.date-range-popover-content .col {
+  text-align: right;
+}
+.date-range-popover-content input {
+  border-width: 1px;
+}
+.date-range-popover-content button {
+  border-radius: 6px;
+}
+.apply-button {
+  background-color:  color($colors, vistra-red, base);
+}
+.date-range-popover-content-ie11 .popover-content {
+  width: 315px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.date-range-popover-content-ie11 .scroll-content {
+  overflow-y: auto;
+  padding-top: 10px !important;
+  padding-bottom: 0px !important;
+  background-color:  color($colors, vistra-lighter-grey, base) !important;
+  border-radius: 5px;
+}
+.date-range-popover-content-ie11 .input-row {
+  text-align: right;
+}
+.date-range-popover-content-ie11 .col {
+  text-align: right;
+}
+.date-range-popover-content-ie11 input {
+  border-width: 1px;
+  margin-top: 3px;
+  margin-right: 15px;
+}
+.date-range-popover-content-ie11 button {
+  border-radius: 6px;
+}

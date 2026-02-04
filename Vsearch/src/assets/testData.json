@@ -1,0 +1,1302 @@
+{
+  "list" : {
+    "pagination": {
+      "count": 10,
+      "hasMoreItems": true,
+      "totalItems": 43,
+      "skipCount": 0,
+      "maxItems": 10
+    },
+    "entries": [
+      {
+          "entry": {
+              "isFile": true,
+              "createdByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "modifiedAt": "2021-09-29T22:32:08.009+0000",
+              "nodeType": "cm:content",
+              "content": {
+                  "mimeType": "text/plain",
+                  "mimeTypeName": "Plain Text",
+                  "sizeInBytes": 641,
+                  "encoding": "UTF-8"
+              },
+              "parentId": "8154c132-a783-4f54-b684-14bf0bf33353",
+              "createdAt": "2021-09-29T22:32:08.009+0000",
+              "isFolder": false,
+              "search": {
+                  "score": 1
+              },
+              "modifiedByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "name": "my_docs_inline.ftl",
+              "location": "nodes",
+              "id": "c2d9cc06-0cf9-4e2f-96d6-89f675fd49df"
+          }
+      },
+      {
+          "entry": {
+              "isFile": true,
+              "createdByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "modifiedAt": "2021-09-29T22:32:07.512+0000",
+              "nodeType": "cm:content",
+              "content": {
+                  "mimeType": "text/plain",
+                  "mimeTypeName": "Plain Text",
+                  "sizeInBytes": 2625,
+                  "encoding": "UTF-8"
+              },
+              "parentId": "8154c132-a783-4f54-b684-14bf0bf33353",
+              "createdAt": "2021-09-29T22:32:07.512+0000",
+              "isFolder": false,
+              "search": {
+                  "score": 0.086603045
+              },
+              "modifiedByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "name": "doc_info.ftl",
+              "location": "nodes",
+              "id": "16f29207-0fca-4e77-8e78-6b37c861ea90"
+          }
+      },
+      {
+          "entry": {
+              "isFile": true,
+              "createdByUser": {
+                  "id": "abeecher",
+                  "displayName": "Alice Beecher"
+              },
+              "modifiedAt": "2011-06-14T10:28:57.790+0000",
+              "nodeType": "fm:post",
+              "content": {
+                  "mimeType": "text/html",
+                  "mimeTypeName": "HTML",
+                  "sizeInBytes": 317,
+                  "encoding": "UTF-8"
+              },
+              "parentId": "53e8664e-e1fb-40d0-9104-019d57f06bee",
+              "createdAt": "2011-02-15T22:09:27.794+0000",
+              "isFolder": false,
+              "search": {
+                  "score": 0.07071109
+              },
+              "modifiedByUser": {
+                  "id": "admin",
+                  "displayName": "Administrator"
+              },
+              "name": "post-1297807767790_183",
+              "location": "nodes",
+              "id": "45210491-2d7c-4a85-ab7c-e6997d32ff02"
+          }
+      },
+      {
+          "entry": {
+              "isFile": true,
+              "createdByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "modifiedAt": "2021-09-29T22:32:07.873+0000",
+              "nodeType": "cm:content",
+              "content": {
+                  "mimeType": "text/plain",
+                  "mimeTypeName": "Plain Text",
+                  "sizeInBytes": 643,
+                  "encoding": "UTF-8"
+              },
+              "parentId": "8154c132-a783-4f54-b684-14bf0bf33353",
+              "createdAt": "2021-09-29T22:32:07.873+0000",
+              "isFolder": false,
+              "search": {
+                  "score": 0.07071109
+              },
+              "modifiedByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "name": "translatable.ftl",
+              "location": "nodes",
+              "id": "c6c068a3-243a-4b49-9630-44662e97198e"
+          }
+      },
+      {
+          "entry": {
+              "isFile": true,
+              "createdByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "modifiedAt": "2021-09-29T22:32:09.955+0000",
+              "nodeType": "cm:content",
+              "content": {
+                  "mimeType": "text/plain",
+                  "mimeTypeName": "Plain Text",
+                  "sizeInBytes": 469,
+                  "encoding": "UTF-8"
+              },
+              "parentId": "7f5453da-c319-4889-964f-060b879b6c77",
+              "createdAt": "2021-09-29T22:32:09.955+0000",
+              "isFolder": false,
+              "search": {
+                  "score": 0.07071109
+              },
+              "modifiedByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "name": "blogsearch.get.html.ftl",
+              "location": "nodes",
+              "id": "c36e81c0-1c6b-4646-ae20-7ad46e00491e"
+          }
+      },
+      {
+          "entry": {
+              "isFile": true,
+              "createdByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "modifiedAt": "2021-09-29T22:32:10.214+0000",
+              "nodeType": "cm:content",
+              "content": {
+                  "mimeType": "text/plain",
+                  "mimeTypeName": "Plain Text",
+                  "sizeInBytes": 481,
+                  "encoding": "UTF-8"
+              },
+              "parentId": "7f5453da-c319-4889-964f-060b879b6c77",
+              "createdAt": "2021-09-29T22:32:10.214+0000",
+              "isFolder": false,
+              "search": {
+                  "score": 0.07071109
+              },
+              "modifiedByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "name": "categorysearch.get.html.ftl",
+              "location": "nodes",
+              "id": "6f8e4a88-8428-4a0e-8d5d-2d16e71cae16"
+          }
+      },
+      {
+          "entry": {
+              "isFile": true,
+              "createdByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "modifiedAt": "2021-09-29T22:32:07.963+0000",
+              "nodeType": "cm:content",
+              "content": {
+                  "mimeType": "text/plain",
+                  "mimeTypeName": "Plain Text",
+                  "sizeInBytes": 1963,
+                  "encoding": "UTF-8"
+              },
+              "parentId": "8154c132-a783-4f54-b684-14bf0bf33353",
+              "createdAt": "2021-09-29T22:32:07.963+0000",
+              "isFolder": false,
+              "search": {
+                  "score": 0.062500365
+              },
+              "modifiedByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "name": "general_example.ftl",
+              "location": "nodes",
+              "id": "83b43bb3-430d-4d59-bdec-2faf36af04ac"
+          }
+      },
+      {
+          "entry": {
+              "isFile": true,
+              "createdByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "modifiedAt": "2021-09-29T22:32:20.991+0000",
+              "nodeType": "cm:content",
+              "content": {
+                  "mimeType": "application/x-javascript",
+                  "mimeTypeName": "JavaScript",
+                  "sizeInBytes": 1490,
+                  "encoding": "UTF-8"
+              },
+              "parentId": "12eeb4cd-20c9-4533-a391-3ebef9849e41",
+              "createdAt": "2021-09-29T22:32:20.991+0000",
+              "isFolder": false,
+              "search": {
+                  "score": 0.062500365
+              },
+              "modifiedByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "name": "start-pooled-review-workflow.js",
+              "location": "nodes",
+              "id": "ec849339-b1c2-4704-8f77-8e7628484fe8"
+          }
+      },
+      {
+          "entry": {
+              "isFile": true,
+              "createdByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "modifiedAt": "2021-09-29T22:32:07.744+0000",
+              "nodeType": "cm:content",
+              "content": {
+                  "mimeType": "text/plain",
+                  "mimeTypeName": "Plain Text",
+                  "sizeInBytes": 690,
+                  "encoding": "UTF-8"
+              },
+              "parentId": "8154c132-a783-4f54-b684-14bf0bf33353",
+              "createdAt": "2021-09-29T22:32:07.744+0000",
+              "isFolder": false,
+              "search": {
+                  "score": 0.061872203
+              },
+              "modifiedByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "name": "my_spaces.ftl",
+              "location": "nodes",
+              "id": "5fb5a2c9-a64b-493a-84b5-4619828692aa"
+          }
+      },
+      {
+          "entry": {
+              "isFile": true,
+              "createdByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "modifiedAt": "2021-09-29T22:32:08.047+0000",
+              "nodeType": "cm:content",
+              "content": {
+                  "mimeType": "text/plain",
+                  "mimeTypeName": "Plain Text",
+                  "sizeInBytes": 3500,
+                  "encoding": "UTF-8"
+              },
+              "parentId": "8154c132-a783-4f54-b684-14bf0bf33353",
+              "createdAt": "2021-09-29T22:32:08.047+0000",
+              "isFolder": false,
+              "search": {
+                  "score": 0.061872203
+              },
+              "modifiedByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "name": "show_audit.ftl",
+              "location": "nodes",
+              "id": "c57bc44b-6a81-4056-a641-d7317ff050b2"
+          }
+      },
+      {
+          "entry": {
+              "isFile": true,
+              "createdByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "modifiedAt": "2021-09-29T22:32:09.896+0000",
+              "nodeType": "cm:content",
+              "content": {
+                  "mimeType": "text/plain",
+                  "mimeTypeName": "Plain Text",
+                  "sizeInBytes": 878,
+                  "encoding": "UTF-8"
+              },
+              "parentId": "7f5453da-c319-4889-964f-060b879b6c77",
+              "createdAt": "2021-09-29T22:32:09.896+0000",
+              "isFolder": false,
+              "search": {
+                  "score": 0.061872203
+              },
+              "modifiedByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "name": "blogsearch.get.atom.ftl",
+              "location": "nodes",
+              "id": "d9bbb6e5-04e3-4fea-824c-322a71cfb9ca"
+          }
+      },
+      {
+          "entry": {
+              "isFile": true,
+              "createdByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "modifiedAt": "2021-09-29T22:32:10.131+0000",
+              "nodeType": "cm:content",
+              "content": {
+                  "mimeType": "text/plain",
+                  "mimeTypeName": "Plain Text",
+                  "sizeInBytes": 885,
+                  "encoding": "UTF-8"
+              },
+              "parentId": "7f5453da-c319-4889-964f-060b879b6c77",
+              "createdAt": "2021-09-29T22:32:10.131+0000",
+              "isFolder": false,
+              "search": {
+                  "score": 0.061872203
+              },
+              "modifiedByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "name": "categorysearch.get.atom.ftl",
+              "location": "nodes",
+              "id": "a5757b85-6c73-4162-9186-4cb78b28cc30"
+          }
+      },
+      {
+          "entry": {
+              "isFile": true,
+              "createdByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "modifiedAt": "2021-09-29T22:32:10.493+0000",
+              "nodeType": "cm:content",
+              "content": {
+                  "mimeType": "text/plain",
+                  "mimeTypeName": "Plain Text",
+                  "sizeInBytes": 904,
+                  "encoding": "UTF-8"
+              },
+              "parentId": "7f5453da-c319-4889-964f-060b879b6c77",
+              "createdAt": "2021-09-29T22:32:10.493+0000",
+              "isFolder": false,
+              "search": {
+                  "score": 0.053033315
+              },
+              "modifiedByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "name": "folder.get.html.ftl",
+              "location": "nodes",
+              "id": "655283dc-c7fe-4360-abad-cf30ca9a1280"
+          }
+      },
+      {
+          "entry": {
+              "isFile": true,
+              "createdByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "modifiedAt": "2021-09-29T22:32:07.915+0000",
+              "nodeType": "cm:content",
+              "content": {
+                  "mimeType": "text/plain",
+                  "mimeTypeName": "Plain Text",
+                  "sizeInBytes": 1106,
+                  "encoding": "UTF-8"
+              },
+              "parentId": "8154c132-a783-4f54-b684-14bf0bf33353",
+              "createdAt": "2021-09-29T22:32:07.915+0000",
+              "isFolder": false,
+              "search": {
+                  "score": 0.053033315
+              },
+              "modifiedByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "name": "recent_docs.ftl",
+              "location": "nodes",
+              "id": "7c6e7bf1-251b-4b24-9156-c99a98eb2575"
+          }
+      },
+      {
+          "entry": {
+              "isFile": true,
+              "createdByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "modifiedAt": "2021-09-29T22:32:07.672+0000",
+              "nodeType": "cm:content",
+              "content": {
+                  "mimeType": "text/plain",
+                  "mimeTypeName": "Plain Text",
+                  "sizeInBytes": 923,
+                  "encoding": "UTF-8"
+              },
+              "parentId": "8154c132-a783-4f54-b684-14bf0bf33353",
+              "createdAt": "2021-09-29T22:32:07.672+0000",
+              "isFolder": false,
+              "search": {
+                  "score": 0.053033315
+              },
+              "modifiedByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "name": "my_docs.ftl",
+              "location": "nodes",
+              "id": "a4662891-89bd-4c15-9466-ea620e63e81d"
+          }
+      },
+      {
+          "entry": {
+              "isFile": true,
+              "createdByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "modifiedAt": "2021-09-29T22:32:27.109+0000",
+              "nodeType": "cm:content",
+              "content": {
+                  "mimeType": "text/plain",
+                  "mimeTypeName": "Plain Text",
+                  "sizeInBytes": 4341,
+                  "encoding": "UTF-8"
+              },
+              "parentId": "rm_report_templates",
+              "createdAt": "2021-09-29T22:32:27.109+0000",
+              "isFolder": false,
+              "search": {
+                  "score": 0.0459282
+              },
+              "modifiedByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "name": "report_rmr_transferReport.html.ftl",
+              "location": "nodes",
+              "id": "rmr_transferReport"
+          }
+      },
+      {
+          "entry": {
+              "isFile": true,
+              "createdByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "modifiedAt": "2021-09-29T22:32:09.463+0000",
+              "nodeType": "cm:content",
+              "content": {
+                  "mimeType": "text/plain",
+                  "mimeTypeName": "Plain Text",
+                  "sizeInBytes": 1859,
+                  "encoding": "UTF-8"
+              },
+              "parentId": "78fd38f6-8c20-498c-b356-e9fd44177f69",
+              "createdAt": "2021-09-29T22:32:09.463+0000",
+              "isFolder": false,
+              "search": {
+                  "score": 0.04419443
+              },
+              "modifiedByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "name": "RSS_2.0_recent_docs.ftl",
+              "location": "nodes",
+              "id": "b091cf0a-0e46-4789-aad9-2c9dcf78adb5"
+          }
+      },
+      {
+          "entry": {
+              "isFile": true,
+              "createdByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "modifiedAt": "2021-09-29T22:32:09.741+0000",
+              "nodeType": "cm:content",
+              "content": {
+                  "mimeType": "text/html",
+                  "mimeTypeName": "HTML",
+                  "sizeInBytes": 1252,
+                  "encoding": "UTF-8"
+              },
+              "parentId": "ceb460cc-d8f5-4df3-95d0-c4d651ffd5a0",
+              "createdAt": "2021-09-29T22:32:09.741+0000",
+              "isFolder": false,
+              "search": {
+                  "score": 0.04419443
+              },
+              "modifiedByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "name": "readme_ja.html",
+              "location": "nodes",
+              "id": "33b532c0-9f24-4375-9c84-88fe14c83a01"
+          }
+      },
+      {
+          "entry": {
+              "isFile": true,
+              "createdByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "modifiedAt": "2021-09-29T22:32:10.405+0000",
+              "nodeType": "cm:content",
+              "content": {
+                  "mimeType": "text/plain",
+                  "mimeTypeName": "Plain Text",
+                  "sizeInBytes": 1199,
+                  "encoding": "UTF-8"
+              },
+              "parentId": "7f5453da-c319-4889-964f-060b879b6c77",
+              "createdAt": "2021-09-29T22:32:10.405+0000",
+              "isFolder": false,
+              "search": {
+                  "score": 0.04419443
+              },
+              "modifiedByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "name": "folder.get.atom.ftl",
+              "location": "nodes",
+              "id": "ebb29019-6f4b-43b7-8b13-13c0acf2f577"
+          }
+      },
+      {
+          "entry": {
+              "isFile": true,
+              "createdByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "modifiedAt": "2021-09-29T22:32:09.765+0000",
+              "nodeType": "cm:content",
+              "content": {
+                  "mimeType": "text/html",
+                  "mimeTypeName": "HTML",
+                  "sizeInBytes": 1252,
+                  "encoding": "UTF-8"
+              },
+              "parentId": "ceb460cc-d8f5-4df3-95d0-c4d651ffd5a0",
+              "createdAt": "2021-09-29T22:32:09.765+0000",
+              "isFolder": false,
+              "search": {
+                  "score": 0.04419443
+              },
+              "modifiedByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "name": "readme_de.html",
+              "location": "nodes",
+              "id": "7b1a3f96-7e9e-4bae-b8e7-baf2ce0346fb"
+          }
+      },
+      {
+          "entry": {
+              "isFile": true,
+              "createdByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "modifiedAt": "2021-09-29T22:32:09.807+0000",
+              "nodeType": "cm:content",
+              "content": {
+                  "mimeType": "text/html",
+                  "mimeTypeName": "HTML",
+                  "sizeInBytes": 1252,
+                  "encoding": "UTF-8"
+              },
+              "parentId": "ceb460cc-d8f5-4df3-95d0-c4d651ffd5a0",
+              "createdAt": "2021-09-29T22:32:09.807+0000",
+              "isFolder": false,
+              "search": {
+                  "score": 0.04419443
+              },
+              "modifiedByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "name": "readme_fr.html",
+              "location": "nodes",
+              "id": "53473ea5-7b56-47fd-9a68-16f862c7ef08"
+          }
+      },
+      {
+          "entry": {
+              "isFile": true,
+              "createdByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "modifiedAt": "2021-09-29T22:32:09.715+0000",
+              "nodeType": "cm:content",
+              "content": {
+                  "mimeType": "text/html",
+                  "mimeTypeName": "HTML",
+                  "sizeInBytes": 1349,
+                  "encoding": "UTF-8"
+              },
+              "parentId": "ceb460cc-d8f5-4df3-95d0-c4d651ffd5a0",
+              "createdAt": "2021-09-29T22:32:09.715+0000",
+              "isFolder": false,
+              "search": {
+                  "score": 0.035355546
+              },
+              "modifiedByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "name": "readme.html",
+              "location": "nodes",
+              "id": "0535cc43-ddbc-4f00-832c-36ebffb16008"
+          }
+      },
+      {
+          "entry": {
+              "isFile": true,
+              "createdByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "modifiedAt": "2021-09-29T22:32:26.681+0000",
+              "nodeType": "cm:content",
+              "content": {
+                  "mimeType": "text/javascript",
+                  "sizeInBytes": 1321,
+                  "encoding": "UTF-8"
+              },
+              "parentId": "rm_behavior_scripts",
+              "createdAt": "2021-09-29T22:32:26.681+0000",
+              "isFolder": false,
+              "search": {
+                  "score": 0.035355546
+              },
+              "modifiedByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "name": "onCreate_supersedes.js",
+              "location": "nodes",
+              "id": "1e0c6d72-bea3-43f7-98c1-44bd8ff7c075"
+          }
+      },
+      {
+          "entry": {
+              "isFile": true,
+              "createdByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "modifiedAt": "2021-09-29T22:32:27.086+0000",
+              "nodeType": "cm:content",
+              "content": {
+                  "mimeType": "text/plain",
+                  "mimeTypeName": "Plain Text",
+                  "sizeInBytes": 8329,
+                  "encoding": "UTF-8"
+              },
+              "parentId": "rm_report_templates",
+              "createdAt": "2021-09-29T22:32:27.086+0000",
+              "isFolder": false,
+              "search": {
+                  "score": 0.031250183
+              },
+              "modifiedByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "name": "report_rmr_destructionReport.html.ftl",
+              "location": "nodes",
+              "id": "rmr_destructionReport"
+          }
+      },
+      {
+          "entry": {
+              "isFile": true,
+              "createdByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "modifiedAt": "2021-09-29T22:32:26.730+0000",
+              "nodeType": "cm:content",
+              "content": {
+                  "mimeType": "text/plain",
+                  "mimeTypeName": "Plain Text",
+                  "sizeInBytes": 8498,
+                  "encoding": "UTF-8"
+              },
+              "parentId": "records_management_email_templates",
+              "createdAt": "2021-09-29T22:32:26.730+0000",
+              "isFolder": false,
+              "search": {
+                  "score": 0.031250183
+              },
+              "modifiedByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "name": "notify-records-due-for-review-email.ftl",
+              "location": "nodes",
+              "id": "22466f62-0a88-4b8e-8ce7-7875894a2a69"
+          }
+      },
+      {
+          "entry": {
+              "isFile": true,
+              "createdByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "modifiedAt": "2021-09-29T22:32:27.133+0000",
+              "nodeType": "cm:content",
+              "content": {
+                  "mimeType": "text/plain",
+                  "mimeTypeName": "Plain Text",
+                  "sizeInBytes": 8775,
+                  "encoding": "UTF-8"
+              },
+              "parentId": "rm_report_templates",
+              "createdAt": "2021-09-29T22:32:27.133+0000",
+              "isFolder": false,
+              "search": {
+                  "score": 0.031250183
+              },
+              "modifiedByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "name": "report_rmr_holdReport.html.ftl",
+              "location": "nodes",
+              "id": "rmr_holdReport"
+          }
+      },
+      {
+          "entry": {
+              "isFile": true,
+              "createdByUser": {
+                  "id": "admin",
+                  "displayName": "Administrator"
+              },
+              "modifiedAt": "2021-11-26T10:03:00.000+0000",
+              "nodeType": "cm:content",
+              "content": {
+                  "mimeType": "application/pdf",
+                  "mimeTypeName": "Adobe PDF Document",
+                  "sizeInBytes": 783956,
+                  "encoding": "UTF-8"
+              },
+              "parentId": "0d745ced-4263-4b0d-952d-65dea932a553",
+              "createdAt": "2021-11-26T10:02:00.000+0000",
+              "isFolder": false,
+              "search": {
+                  "score": 0.027951013
+              },
+              "modifiedByUser": {
+                  "id": "admin",
+                  "displayName": "Administrator"
+              },
+              "name": "Vistra_Change_Framework_-_key_messages_2020.03.09_v1.pdf",
+              "location": "nodes",
+              "id": "0cb6ef45-b96d-48ef-b9b6-b69ff1d14fad"
+          }
+      },
+      {
+          "entry": {
+              "isFile": true,
+              "createdByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "modifiedAt": "2021-09-29T22:32:09.211+0000",
+              "nodeType": "cm:content",
+              "content": {
+                  "mimeType": "text/plain",
+                  "mimeTypeName": "Plain Text",
+                  "sizeInBytes": 10348,
+                  "encoding": "UTF-8"
+              },
+              "parentId": "b1c80172-6f09-4770-939d-9246c36e6923",
+              "createdAt": "2021-09-29T22:32:09.211+0000",
+              "isFolder": false,
+              "search": {
+                  "score": 0.022097215
+              },
+              "modifiedByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "name": "wf-email_de.html.ftl",
+              "location": "nodes",
+              "id": "db3b6750-3c21-44ab-a6c2-c814565360ff"
+          }
+      },
+      {
+          "entry": {
+              "isFile": true,
+              "createdByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "modifiedAt": "2021-09-29T22:32:26.968+0000",
+              "nodeType": "cm:content",
+              "content": {
+                  "mimeType": "text/plain",
+                  "mimeTypeName": "Plain Text",
+                  "sizeInBytes": 8003,
+                  "encoding": "UTF-8"
+              },
+              "parentId": "records_management_email_templates",
+              "createdAt": "2021-09-29T22:32:26.968+0000",
+              "isFolder": false,
+              "search": {
+                  "score": 0.022097215
+              },
+              "modifiedByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "name": "record-rejected-email.ftl",
+              "location": "nodes",
+              "id": "record_rejected_template"
+          }
+      },
+      {
+          "entry": {
+              "isFile": true,
+              "createdByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "modifiedAt": "2021-09-29T22:32:09.288+0000",
+              "nodeType": "cm:content",
+              "content": {
+                  "mimeType": "text/plain",
+                  "mimeTypeName": "Plain Text",
+                  "sizeInBytes": 10297,
+                  "encoding": "UTF-8"
+              },
+              "parentId": "b1c80172-6f09-4770-939d-9246c36e6923",
+              "createdAt": "2021-09-29T22:32:09.288+0000",
+              "isFolder": false,
+              "search": {
+                  "score": 0.022097215
+              },
+              "modifiedByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "name": "wf-email_es.html.ftl",
+              "location": "nodes",
+              "id": "ae33c8eb-2d94-4ed9-a404-30c530bfcb69"
+          }
+      },
+      {
+          "entry": {
+              "isFile": true,
+              "createdByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "modifiedAt": "2021-09-29T22:32:09.164+0000",
+              "nodeType": "cm:content",
+              "content": {
+                  "mimeType": "text/plain",
+                  "mimeTypeName": "Plain Text",
+                  "sizeInBytes": 10436,
+                  "encoding": "UTF-8"
+              },
+              "parentId": "b1c80172-6f09-4770-939d-9246c36e6923",
+              "createdAt": "2021-09-29T22:32:09.164+0000",
+              "isFolder": false,
+              "search": {
+                  "score": 0.022097215
+              },
+              "modifiedByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "name": "wf-email.html.ftl",
+              "location": "nodes",
+              "id": "wf-email-html-ftl"
+          }
+      },
+      {
+          "entry": {
+              "isFile": true,
+              "createdByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "modifiedAt": "2021-09-29T22:32:09.324+0000",
+              "nodeType": "cm:content",
+              "content": {
+                  "mimeType": "text/plain",
+                  "mimeTypeName": "Plain Text",
+                  "sizeInBytes": 10299,
+                  "encoding": "UTF-8"
+              },
+              "parentId": "b1c80172-6f09-4770-939d-9246c36e6923",
+              "createdAt": "2021-09-29T22:32:09.324+0000",
+              "isFolder": false,
+              "search": {
+                  "score": 0.022097215
+              },
+              "modifiedByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "name": "wf-email_fr.html.ftl",
+              "location": "nodes",
+              "id": "4e9f3523-bde1-4c41-b51c-b46ebb16f5ed"
+          }
+      },
+      {
+          "entry": {
+              "isFile": true,
+              "createdByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "modifiedAt": "2021-09-29T22:32:09.351+0000",
+              "nodeType": "cm:content",
+              "content": {
+                  "mimeType": "text/plain",
+                  "mimeTypeName": "Plain Text",
+                  "sizeInBytes": 10318,
+                  "encoding": "UTF-8"
+              },
+              "parentId": "b1c80172-6f09-4770-939d-9246c36e6923",
+              "createdAt": "2021-09-29T22:32:09.351+0000",
+              "isFolder": false,
+              "search": {
+                  "score": 0.022097215
+              },
+              "modifiedByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "name": "wf-email_it.html.ftl",
+              "location": "nodes",
+              "id": "1e687e7b-48c6-436f-9dd7-a55aa0a9732e"
+          }
+      },
+      {
+          "entry": {
+              "isFile": true,
+              "createdByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "modifiedAt": "2021-09-29T22:32:09.384+0000",
+              "nodeType": "cm:content",
+              "content": {
+                  "mimeType": "text/plain",
+                  "mimeTypeName": "Plain Text",
+                  "sizeInBytes": 10353,
+                  "encoding": "UTF-8"
+              },
+              "parentId": "b1c80172-6f09-4770-939d-9246c36e6923",
+              "createdAt": "2021-09-29T22:32:09.384+0000",
+              "isFolder": false,
+              "search": {
+                  "score": 0.022097215
+              },
+              "modifiedByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "name": "wf-email_ja.html.ftl",
+              "location": "nodes",
+              "id": "213ed04a-aa67-47f0-b52d-ea0254b7fbd5"
+          }
+      },
+      {
+          "entry": {
+              "isFile": true,
+              "createdByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "modifiedAt": "2021-09-29T22:32:26.852+0000",
+              "nodeType": "cm:content",
+              "content": {
+                  "mimeType": "text/plain",
+                  "mimeTypeName": "Plain Text",
+                  "sizeInBytes": 8003,
+                  "encoding": "UTF-8"
+              },
+              "parentId": "records_management_email_templates",
+              "createdAt": "2021-09-29T22:32:26.852+0000",
+              "isFolder": false,
+              "search": {
+                  "score": 0.022097215
+              },
+              "modifiedByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "name": "record-superseded-email.ftl",
+              "location": "nodes",
+              "id": "record_superseded_template"
+          }
+      },
+      {
+          "entry": {
+              "isFile": true,
+              "createdByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "modifiedAt": "2021-09-29T22:32:09.412+0000",
+              "nodeType": "cm:content",
+              "content": {
+                  "mimeType": "text/plain",
+                  "mimeTypeName": "Plain Text",
+                  "sizeInBytes": 10137,
+                  "encoding": "UTF-8"
+              },
+              "parentId": "b1c80172-6f09-4770-939d-9246c36e6923",
+              "createdAt": "2021-09-29T22:32:09.412+0000",
+              "isFolder": false,
+              "search": {
+                  "score": 0.022097215
+              },
+              "modifiedByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "name": "wf-email_nl.html.ftl",
+              "location": "nodes",
+              "id": "9a10d79d-188a-4166-a6ff-5e47b9e2b071"
+          }
+      },
+      {
+          "entry": {
+              "isFile": true,
+              "createdByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "modifiedAt": "2021-09-29T22:32:08.418+0000",
+              "nodeType": "cm:content",
+              "content": {
+                  "mimeType": "text/plain",
+                  "mimeTypeName": "Plain Text",
+                  "sizeInBytes": 9132,
+                  "encoding": "UTF-8"
+              },
+              "parentId": "1c528ad9-e98b-412e-9438-7fb3813159d0",
+              "createdAt": "2021-09-29T22:32:08.418+0000",
+              "isFolder": false,
+              "search": {
+                  "score": 0.022097215
+              },
+              "modifiedByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "name": "activities-email.ftl",
+              "location": "nodes",
+              "id": "32fed96a-4357-44be-a8b0-069f10cb3201"
+          }
+      },
+      {
+          "entry": {
+              "isFile": true,
+              "createdByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "modifiedAt": "2021-09-29T22:32:08.463+0000",
+              "nodeType": "cm:content",
+              "content": {
+                  "mimeType": "text/plain",
+                  "mimeTypeName": "Plain Text",
+                  "sizeInBytes": 9140,
+                  "encoding": "UTF-8"
+              },
+              "parentId": "1c528ad9-e98b-412e-9438-7fb3813159d0",
+              "createdAt": "2021-09-29T22:32:08.463+0000",
+              "isFolder": false,
+              "search": {
+                  "score": 0.022097215
+              },
+              "modifiedByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "name": "activities-email_fr.ftl",
+              "location": "nodes",
+              "id": "2877d85e-bed6-415c-ad8e-e3a2b06ca0ed"
+          }
+      },
+      {
+          "entry": {
+              "isFile": true,
+              "createdByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "modifiedAt": "2021-09-29T22:32:08.524+0000",
+              "nodeType": "cm:content",
+              "content": {
+                  "mimeType": "text/plain",
+                  "mimeTypeName": "Plain Text",
+                  "sizeInBytes": 9148,
+                  "encoding": "UTF-8"
+              },
+              "parentId": "1c528ad9-e98b-412e-9438-7fb3813159d0",
+              "createdAt": "2021-09-29T22:32:08.524+0000",
+              "isFolder": false,
+              "search": {
+                  "score": 0.022097215
+              },
+              "modifiedByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "name": "activities-email_es.ftl",
+              "location": "nodes",
+              "id": "dd36bd9f-bfe6-4452-b12c-68e6d53481a8"
+          }
+      },
+      {
+          "entry": {
+              "isFile": true,
+              "createdByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "modifiedAt": "2021-09-29T22:32:08.661+0000",
+              "nodeType": "cm:content",
+              "content": {
+                  "mimeType": "text/plain",
+                  "mimeTypeName": "Plain Text",
+                  "sizeInBytes": 9165,
+                  "encoding": "UTF-8"
+              },
+              "parentId": "1c528ad9-e98b-412e-9438-7fb3813159d0",
+              "createdAt": "2021-09-29T22:32:08.661+0000",
+              "isFolder": false,
+              "search": {
+                  "score": 0.022097215
+              },
+              "modifiedByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "name": "activities-email_ja.ftl",
+              "location": "nodes",
+              "id": "f912c91b-3077-4d21-b650-85386ae01349"
+          }
+      },
+      {
+          "entry": {
+              "isFile": true,
+              "createdByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "modifiedAt": "2021-09-29T22:32:08.575+0000",
+              "nodeType": "cm:content",
+              "content": {
+                  "mimeType": "text/plain",
+                  "mimeTypeName": "Plain Text",
+                  "sizeInBytes": 9150,
+                  "encoding": "UTF-8"
+              },
+              "parentId": "1c528ad9-e98b-412e-9438-7fb3813159d0",
+              "createdAt": "2021-09-29T22:32:08.575+0000",
+              "isFolder": false,
+              "search": {
+                  "score": 0.022097215
+              },
+              "modifiedByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "name": "activities-email_de.ftl",
+              "location": "nodes",
+              "id": "5d03711b-1b00-49b9-a3ef-31465c1fc098"
+          }
+      },
+      {
+          "entry": {
+              "isFile": true,
+              "createdByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "modifiedAt": "2021-09-29T22:32:08.622+0000",
+              "nodeType": "cm:content",
+              "content": {
+                  "mimeType": "text/plain",
+                  "mimeTypeName": "Plain Text",
+                  "sizeInBytes": 9134,
+                  "encoding": "UTF-8"
+              },
+              "parentId": "1c528ad9-e98b-412e-9438-7fb3813159d0",
+              "createdAt": "2021-09-29T22:32:08.622+0000",
+              "isFolder": false,
+              "search": {
+                  "score": 0.022097215
+              },
+              "modifiedByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "name": "activities-email_it.ftl",
+              "location": "nodes",
+              "id": "21803aa4-4174-468d-9069-a5a5cd8e853a"
+          }
+      },
+      {
+          "entry": {
+              "isFile": true,
+              "createdByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "modifiedAt": "2021-09-29T22:32:08.714+0000",
+              "nodeType": "cm:content",
+              "content": {
+                  "mimeType": "text/plain",
+                  "mimeTypeName": "Plain Text",
+                  "sizeInBytes": 9125,
+                  "encoding": "UTF-8"
+              },
+              "parentId": "1c528ad9-e98b-412e-9438-7fb3813159d0",
+              "createdAt": "2021-09-29T22:32:08.714+0000",
+              "isFolder": false,
+              "search": {
+                  "score": 0.022097215
+              },
+              "modifiedByUser": {
+                  "id": "System",
+                  "displayName": "System"
+              },
+              "name": "activities-email_nl.ftl",
+              "location": "nodes",
+              "id": "d257fa00-ffd6-40da-b4f4-4c0d91047a84"
+          }
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+<ion-list>
+  <ion-note>{{ searchProvider.selectedDocument.title}}</ion-note>
+  <ion-item>
+    <img [src]="searchProvider.selectedDocument.previewBase64[0] | sanitizeBase64Url" style="width: 100%;">
+  </ion-item>
+  <ion-item>
+    <button ion-button outline small (click)="exit()">Close</button>
+    <button ion-button small (click)="open()">Open document</button>
+  </ion-item>
+</ion-list>

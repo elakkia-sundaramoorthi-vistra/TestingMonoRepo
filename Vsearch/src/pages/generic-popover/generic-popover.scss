@@ -1,0 +1,12 @@
+vistra-generic-popover {
+    ion-list-header {
+      margin-bottom: 0px !important;
+    }
+    ion-label {
+      color:  color($colors, vistra-grey, base) !important;
+    }
+    .popover-header ion-label {
+      color:  color($colors, vistra-red, base) !important;
+      font-weight: bold;
+    }
+}

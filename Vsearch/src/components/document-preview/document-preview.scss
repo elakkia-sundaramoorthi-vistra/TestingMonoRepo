@@ -1,0 +1,58 @@
+document-preview {
+  ion-list {
+    height: fit-content;
+    // border-width: 1px;
+    // border-block-color: #C0C0C0;
+    // border-style: solid;
+    border-radius: 10px;
+  }
+  /* TODO: Refine this for more graceful switching when resizing browser */
+  .preview-panel {
+    font-size: 12px;
+    white-space: normal;
+    display: grid;
+    /* @media (min-width: 768px) {
+      width: 150px;
+    }
+    @media (min-width: 1089px) {
+      width: 200px;
+    } */
+  }
+  .preview-panel {
+    background-color: color($colors, vistra-white, base);
+    // overflow-y: scroll;
+    height: 600px;
+  }
+  .preview-panel ion-label {
+    font-size: 12px;
+    white-space: normal;
+  }
+  .preview-panel ion-item {
+    border-width: thin !important;
+    border-style: outset;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  .preview-panel strong {
+    display: block;
+  }
+  .preview-list-header {
+    background-color: color($colors, vistra-white, base);
+    border-top-width: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color:  color($colors, vistra-red, base) !important;
+    font-weight: bold;
+    margin-bottom: 0px;
+  }
+  ion-item-divider ion-label {
+    font-weight: bold;
+    margin-bottom: 26px !important;
+  }
+  .preview-buttons {
+    border-radius: 6px;
+  }
+}
+.preview-popover .popover-content {
+  width: 50%;
+}

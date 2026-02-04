@@ -1,0 +1,102 @@
+<ion-grid class="results-grid">
+  <ion-row>
+    <ion-col class="results-col-result-col">
+      <ion-list class="results-scroll-area">
+        <!-- <ion-item *ngIf="searchProvider.searchKeyword.length > 0" class="search-keyword-display">
+          Searching "{{searchProvider.searchKeyword}}"
+          <div *ngIf="searchProvider.sortingSettings.title.length > 0" style="display: inline;">
+            (Sorted by <span style="font-weight: normal;">{{ searchProvider.sortingSettings.title }}</span>
+            <ion-icon [name]="searchProvider.sortingSettings.iconName" *ngIf="searchProvider.sortingSettings.iconName?.length > 0"></ion-icon>)
+          </div>
+        </ion-item> -->
+        <ion-list-header class="results-ion-list-header">
+          <Span class="results-header">
+            {{ searchProvider.pagination.totalItems }} results
+          </Span>
+          <ion-spinner name="dots" *ngIf="showSortingSpinner" class="results-header" style="display: contents;"></ion-spinner>
+          <button ion-button small outline color="vistra-grey"
+                  (click)="emitPresentFilteringPopover($event)"
+                  class="search-button hide-on-large-devices" icon-end item-end>
+            Filter
+            <ion-icon name="md-arrow-dropdown"></ion-icon>
+          </button>
+          <button ion-button small outline color="vistra-grey"
+                  (click)="emitPresentSortingPopover($event)"
+                  class="search-button" id="btnSortDropDown" icon-end item-end>
+            Sort results
+            <ion-icon name="md-arrow-dropdown"></ion-icon>
+          </button>
+        </ion-list-header>
+        <!--
+          Pagination quirk: pagination-controls's totalItems adds an additional page.
+          Subtracting resultsPerPage from totalItems in the absence of any clarity about
+          correctly setting totalItems -->
+        <ion-item *ngFor="let result of searchProvider.results | paginate: { itemsPerPage: apiSettingsProvider.pagination.resultsPerPage, currentPage: apiSettingsProvider.pagination.pageNumber, totalItems: (apiSettingsProvider.pagination.totalItems) }" class="result-item hover-effect">
+          <h2>
+            <!-- <a (click)="presentPreviewAlert($event, result)"> -->
+            <!-- <a (click)="presentThumbnailPopover($event, result)" class="clickable"> -->
+            <a (click)="openDocument(result.documentUrl, result.dmsName)" class="clickable">
+              {{result.title.substring(0, 70) }}
+              <!-- <ion-icon name="search" *ngIf="result.previewBase64.length > 0" title="Click to view thumbnail" class="thumbnail-icon"></ion-icon> -->
+            </a>
+          </h2>
+          <!-- <p>
+            <strong class="title-case">Created date:</strong> {{ result.createdAt | date: 'dd/MM/yyyy'}}
+            <strong class="title-case">Author:</strong> {{result.author }}
+          </p> -->
+          <p>
+            <strong class="title-case">Author:</strong> {{result.author }}
+            <strong class="title-case">Created Date:</strong> <span *ngIf="result.createdAt !='N/A'">{{ result.createdAt | date: 'dd/MM/yyyy'}}</span>
+            <span *ngIf="result.createdAt =='N/A'">N/A</span>
+          </p>
+          <p>
+            <strong class="title-case">Source DMS:</strong> {{ result.dmsName}}
+          </p>
+          <p>
+          <strong class="title-case">Company/Client Master:</strong> {{ result.clientName }} <strong class="title-case"> Client Code:</strong> {{ result.clientCode}}
+          </p>
+          <button ion-button small clear icon-only color="dark" item-end (click)="presentDocumentPopover($event, result, 'large')" class="hide-on-small-devices">
+            <ion-icon name="ios-more"></ion-icon>
+          </button>
+          <button ion-button small clear icon-only color="dark" item-end (click)="presentDocumentPopover($event, result, 'small')" class="hide-on-large-devices">
+            <ion-icon name="ios-more"></ion-icon>
+          </button>
+        </ion-item>
+      </ion-list>
+    </ion-col>
+  </ion-row>
+  <ion-row style="height: 6%;">
+    <ion-col class="results-col-summary-col" align-self-baseline>
+        <ion-list #summaryPanel no-lines class="summary-panel">
+          <ion-item>
+            <ion-grid>
+              <ion-row align-items-center>
+                <ion-col col-4 style="text-align: left;">
+                  <ion-buttons left *ngIf='searchProvider.targetSystem == "ELASTIC"' id="pageNumber" style="margin-left: -25px;">
+                    <button ion-button clear color="vistra-grey" style="cursor: initial;">
+                    {{ apiSettingsProvider.pagination.enumerator }} of {{ apiSettingsProvider.pagination.totalItems }}
+                    </button>
+                  </ion-buttons>
+                </ion-col>
+                <ion-col col-4 style="padding-bottom: 5px;">
+                  <pagination (goToNext)="emitChangePage('next')" (goToPrevious)="emitChangePage('previous')"
+                                (goToPage)="emitChangePage('pageNumber', $event)" style="display: inline-block;"
+                                color="vistra-grey" [collapsedMode]="collapsePaginationControls">
+                  </pagination>
+                </ion-col>
+                <ion-col col-4 style="text-align: right;">
+                  <ion-buttons end class="results-per-page" style="margin-right: -20px;">
+
+                    <button ion-button small clear color="vistra-grey" icon-end (click)="emitChangeResultsPerPage($event)">
+                      Showing {{ apiSettingsProvider.pagination.resultsPerPage }} <br/>results per page
+                      <ion-icon name="md-arrow-dropdown"></ion-icon>
+                    </button>
+                  </ion-buttons>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-item>
+        </ion-list>
+    </ion-col>
+  </ion-row>
+</ion-grid>

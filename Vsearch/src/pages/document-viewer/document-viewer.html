@@ -1,0 +1,11 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>documentViewer</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <iframe #documentContainer [src]="src | safe: 'resourceUrl'"  title="Document details" *ngIf="src!=null"></iframe>
+  <!-- <div [innerHTML]="element"></div> -->
+  <!-- <div #documentContainer></div> -->
+</ion-content>

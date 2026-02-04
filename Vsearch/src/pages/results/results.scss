@@ -1,0 +1,304 @@
+page-results {
+  .toolbar {
+    background-color: #cccccc;
+  }
+  .scroll-content {
+    // margin-bottom: 56px;
+    // margin-bottom: 26px;
+    //margin-bottom: 0px;
+  }
+  ion-searchbar {
+    width: 100%;
+  }
+  .searchbar-input {
+    border-radius: 20px !important;
+  }
+  .help-text {
+    text-align: left !important;
+  }
+  .help-text button {
+    text-align: left;
+    text-transform: none;
+  }
+  .help-text .help-title {
+    text-align: left;
+    text-transform: none;
+    display: contents;
+    color: color($colors, vistra-red, base);
+    font-weight: bold;
+    white-space: pre-line;
+  }
+  .help-text body {
+    text-align: left;
+    text-transform: none;
+    display: contents;
+  }
+  @media (max-width: 768px) {
+    .results-header {
+      font-size: 1em;
+    }
+    .container-grid {
+      padding-top: 0px;
+    }
+  }
+  @media (min-width: 768px) {
+    .results-header {
+      font-size: 1.5em;
+    }
+    .container-grid {
+      padding-top: 15px;
+    }
+  }
+  .search-keyword-display .item-inner {
+    border-bottom: 0px !important;
+  }
+  .result-item ion-label {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .result-item h2 {
+    margin-top: 1rem !important;
+  }
+  @media (min-width: 768px) {
+    .result-item p {
+      font-size: 1rem;
+    }
+  }
+  .thumbnail-icon {
+    display: inline;
+    color: black;
+  }
+  ion-list-header {
+    border-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+  ion-list-header ion-label {
+    text-align: left;
+  }
+  ion-row {
+    display: flex !important;
+    align-items: flex-start;
+  }
+  ion-col {
+    padding-bottom: 0px;  // Helps  get the summary panel to be flush with the filtering panel
+  }
+  .left-panel {
+    height: 100%;
+    background-color: color($colors, vistra-light-grey, base);
+    border-radius: 10px;
+  }
+  .left-panel-subheader {
+    text-align: left;
+    margin-left: 20px;
+    display: block;
+  }
+  .results-panel-col {
+    height: 100%;
+    display: grid;
+  }
+  .filtering-panel-col {
+    height: 100%;
+  }
+  .grouped-checkbox {
+    min-height: 10px;
+  }
+  .grouped-checkbox ion-checkbox {
+    margin-top: 2px !important;
+    margin-bottom: 2px !important;
+  }
+  .grouped-checkbox ion-label {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .right-panel {
+    height: 40%;
+    border-width: 1px;
+    border-block-color: #C0C0C0;
+    border-style: solid;
+    border-radius: 10px;
+  }
+  .right-panel ion-label {
+    font-size: small;
+    font-weight: bold;
+  }
+  .results-panel {
+    overflow-y: scroll;
+    height: 100%;
+  }
+  .filter-list {
+    margin-bottom: 0px;
+    overflow-y: scroll;
+  }
+  .filter-list ion-item {
+    background-color: transparent;
+  }
+  .filter-buttons {
+    text-align: left;
+    padding-left: 0px;
+  }
+  .filtering-button {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 6px;
+    width: 48%;
+  }
+  .filter-instruction ion-label {
+    white-space: normal;
+  }
+  .date-label {
+    text-align: end;
+  }
+  .summary-panel {
+    // height: 100%;
+    background-color: #dcdcdc;
+    border-radius: 10px;
+  }
+  .summary-panel ion-buttons {
+    display: inline;
+  }
+  .summary-panel ion-label {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .summary-panel ion-grid {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .summary-panel ion-col {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .summary-panel .results-per-page {
+    float: right;
+  }
+  .summary-panel ion-item {
+    background-color: transparent;
+  }
+  .summary-panel .button-inner {
+    text-transform: none;
+  }
+  .summary-panel ion-note {
+    color: color($colors, vistra-grey, base);
+    font-size: smaller;
+  }
+  .summary-panel .pagination-controls {
+    color: color($colors, vistra-grey, base);
+  }
+  pagination-controls ul {
+    display: inline-block;
+  }
+  .ngx-pagination .current {
+    background-color: color($colors, vistra-grey, base);
+  }
+  .pagination-logo {
+    text-align: center;
+  }
+  .pagination-logo img {
+    width: 20%;
+  }
+  .pagination-panel ion-label{
+    text-align: center;
+  }
+  .pagination-panel a {
+    color:  color($colors, vistra-grey, base);
+    padding-right: 5px;
+  }
+  .pagination-panel .current-page {
+    color:  color($colors, vistra-red, base);
+    text-decoration: underline;
+  }
+  .footer::before {// #emergencyFooterFix (for presentation)
+    background-image: none;
+  }
+  .footer-grid {
+    background-color: color($colors, vistra-grey, base) !important;
+    width: 100%;
+    color: color($colors, vistra-white, base);
+    // border-radius: 5px;
+  }
+  .footer-grid ion-col {
+    text-align: end;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .left-panel, .left-panel ion-label {
+    color:  color($colors, vistra-grey, base) !important;
+  }
+  .island-grey {
+    background-color: #dcdcdc;
+  }
+  .island-grey .checkbox-icon {
+    border-color: #dcdcdc;
+  }
+  .island-grey ion-checkbox {
+    margin-right: 20px !important;
+  }
+  .island-grey ion-label {
+    font-size: 12px;
+    white-space: normal;
+  }
+
+  /* Group left panel options by visual space */
+  /*.left-panel ion-item {
+    min-height: 2.4rem;
+  }
+  .left-panel strong {
+    padding-top: 7%;
+  }*/
+
+  /* Group left panel options by underlining */
+  .left-panel strong {
+    padding-top: 7%;
+  }
+  .underlined-item .input-wrapper {
+    border-bottom: 1px solid #C0C0C0;
+  }
+  .overlined-header {
+    border-top: 1px solid #C0C0C0;
+    margin-top: 7%;
+  }
+  @media (max-width: 1024px) {
+    .hide-on-small-devices {
+      display: none !important;
+    }
+  }
+  @media (min-width: 1025px) {
+    .hide-on-large-devices {
+      display: none !important;
+    }
+    .toolbar {
+      padding-bottom: 15px;
+      padding-top: 15px;
+    }
+  }
+
+results-grid {
+  .container-grid {
+    height: 100%;
+  }
+  .filters-col {
+    height: 100%;
+    border-width: 1px;
+    border-style: solid;
+  }
+  .results-col {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 100%;
+  }
+  .results-col .results-col-summary-col {
+    padding-bottom: 0px;
+  }
+  .results-col-result-col {
+    padding-top: 0px;
+  }
+  .results-grid {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .results-grid ion-row {
+    border-width: 1px;
+    border-style: solid;
+  }
+}
+}

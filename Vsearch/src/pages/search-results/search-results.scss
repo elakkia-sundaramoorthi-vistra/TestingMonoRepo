@@ -1,0 +1,316 @@
+page-search-results {
+  .container-grid {
+    height: 100%;
+  }
+  .filters-col {
+    //height: 100%;
+    padding: 0px;
+    text-align: end;
+  }
+  .results-col {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    //height: 100%;
+  }
+  .preview-col {
+    overflow-y: scroll;
+    height: 100%;
+  }
+
+  /* ================End of grid styles==================  */
+
+  .toolbar {
+    background-color: #cccccc;
+  }
+  .scroll-content {
+    // margin-bottom: 56px;
+    // margin-bottom: 26px;
+    //margin-bottom: 0px;
+  }
+  ion-searchbar {
+    width: 100%;
+  }
+  .searchbar-input {
+    border-radius: 20px !important;
+  }
+  .help-text {
+    text-align: left !important;
+  }
+  .help-text button {
+    text-align: left;
+    text-transform: none;
+    cursor: initial;
+  }
+  .help-text .help-title span {
+    color: color($colors, vistra-grey, base);
+    font-weight: normal;
+    text-align: left;
+    text-transform: none;
+    display: contents;
+  }
+  .help-text .help-title::before {
+    content: 'Can’t find what you\'re looking for?\A';
+    white-space: pre-wrap;
+    text-align: left;
+    text-transform: none;
+    display: contents;
+    color: color($colors, vistra-red, base);
+    font-weight: bold;
+    white-space: pre-line;
+  }
+  @media (max-width: 768px) {
+    .results-header {
+      font-size: 1em;
+    }
+    .container-grid {
+      padding-top: 0px;
+    }
+  }
+  @media (min-width: 768px) {
+    .results-header {
+      font-size: 1.5em;
+    }
+    .container-grid {
+      padding-top: 20px;
+    }
+  }
+  .search-keyword-display .item-inner {
+    border-bottom: 0px !important;
+  }
+  .result-item ion-label {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .result-item h2 {
+    margin-top: 1rem !important;
+  }
+  @media (min-width: 768px) {
+    .result-item p {
+      font-size: 1rem;
+    }
+  }
+  .thumbnail-icon {
+    display: inline;
+    color: black;
+  }
+  ion-list-header {
+    border-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+  ion-list-header ion-label {
+    text-align: left;
+  }
+  ion-row {
+    display: flex !important;
+    align-items: flex-start;
+  }
+  ion-col {
+    padding-bottom: 0px;  // Helps  get the summary panel to be flush with the filtering panel
+  }
+  .left-panel {
+    height: auto;
+    background-color: color($colors, vistra-light-grey, base);
+    border-radius: 10px;
+    padding-bottom: 0px !important;
+  }
+  .left-panel-subheader {
+    text-align: left;
+    margin-left: 20px;
+    display: block;
+  }
+  .results-panel-col {
+    height: 100%;
+    display: grid;
+  }
+  .filtering-panel-col {
+    height: 100%;
+  }
+  .grouped-checkbox {
+    min-height: 10px;
+  }
+  .grouped-checkbox ion-checkbox {
+    margin-top: 2px !important;
+    margin-bottom: 2px !important;
+  }
+  .grouped-checkbox ion-label {
+    margin-top: 3px;
+    margin-bottom: 0px;
+  }
+  .right-panel {
+    height: 40%;
+    border-width: 1px;
+    border-block-color: #C0C0C0;
+    border-style: solid;
+    border-radius: 10px;
+  }
+  .right-panel ion-label {
+    font-size: small;
+    font-weight: bold;
+  }
+  .results-panel {
+    overflow-y: scroll;
+    height: 100%;
+  }
+  .filter-list {
+    margin-bottom: 0px;
+    overflow-y: auto;
+  }
+  .filter-list ion-item {
+    background-color: transparent;
+  }
+  .filter-list-no-static-footer {
+    margin-bottom: 0px;
+    display: inline-table;
+    padding-right: 0% !important;
+    padding-left: 3% !important;
+    width: 92%;
+  }
+  .filter-list-no-static-footer ion-item {
+    background-color: transparent;
+  }
+  .filter-buttons {
+    text-align: left;
+  }
+  .filtering-button {
+    border-radius: 6px;
+    font-size: 1rem;
+    /* margin-left: auto;
+    margin-right: auto;
+    width: 48%; */
+  }
+  .filtering-button-left {
+      margin-right: 2%;
+      margin-left: 4px;
+  }
+  .filtering-button-right {
+      margin-left: 2%;
+  }
+  .filter-instruction ion-label {
+    white-space: normal;
+  }
+  .date-label {
+    text-align: end;
+  }
+  .footer::before {// #emergencyFooterFix (for presentation)
+    background-image: none;
+  }
+  .footer-grid {
+    background-color: color($colors, vistra-grey, base) !important;
+    width: 100%;
+    color: color($colors, vistra-white, base);
+    // border-radius: 5px;
+  }
+  .footer-grid ion-col {
+    text-align: end;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .copyright-strip {
+    padding: 0px !important;
+    min-height: 0px !important;
+  }
+  .copyright-strip {
+    background-color: color($colors, vistra-grey, base) !important;
+    width: 100%;
+    color: color($colors, vistra-white, base);
+    // border-radius: 5px;
+  }
+  .copyright-strip ion-col {
+    text-align: right;
+    /* padding-top: 0px;
+    padding-bottom: 0px; */
+  }
+  .left-panel, .left-panel ion-label {
+    color:  color($colors, vistra-grey, base) !important;
+  }
+  .island-grey {
+    background-color: #dcdcdc;
+  }
+  .island-grey .checkbox-icon {
+    border-color: #dcdcdc;
+  }
+  .island-grey ion-checkbox {
+    margin-right: 7px !important;
+  }
+  .island-grey ion-label {
+    font-size: 12px;
+    white-space: normal;
+  }
+
+  /* Group left panel options by visual space */
+  /*.left-panel ion-item {
+    min-height: 2.4rem;
+  }
+  .left-panel strong {
+    padding-top: 7%;
+  }*/
+
+  /* Group left panel options by underlining */
+  .left-panel strong {
+    padding-top: 7%;
+  }
+  .underlined-item .input-wrapper {
+    border-bottom: 1px solid #C0C0C0;
+  }
+  .overlined-header {
+    border-top: 1px solid #C0C0C0;
+    margin-top: 7%;
+  }
+  @media (max-width: 1024px) {
+    .hide-on-small-devices {
+      display: none !important;
+      width: 15% !important;
+    }
+  }
+  @media (min-width: 1025px) {
+    .hide-on-large-devices {
+      display: none !important;
+      width: 15% !important;
+    }
+    .toolbar {
+      padding-bottom: 0px;
+      padding-top: 5px;
+    }
+  }
+  .ie11-toolbar {
+    width: 100%;
+  }
+  .ie11-toolbar table {
+    border: 1px;
+    width: 100%;
+  }
+  .ie11-logo {
+    width: 10%;
+    height: 32px;
+    padding-right: 10px;
+  }
+   .ie11-logo-v {
+    height: 32px;
+    padding-right: 6px;
+  }
+  .vlogo {
+    height: 100%;
+  }
+  .ie11-searchbar {
+    width: 100%;
+  }
+  .ie11-searchbar .searchbar-md .searchbar-input {
+    padding: 12px 55px;
+    font-size: 1.8rem;
+    line-height: 1rem;
+  }
+  .col-vlogo {
+    top: 8px;
+    max-width: 50px;
+  }
+  .col-logo {
+    top: 8px;
+    max-width: 167px;
+  }
+  .v-logo {
+    height: 32px;
+  }
+  .col-helptext {
+    max-width: 284px;
+  }
+}

@@ -1,0 +1,14 @@
+{
+    "authType": "OAUTH",
+    "oauth2": {
+    "host": "https://dms.datadmsdev.vaws/auth/realms/alfresco",
+    "clientId": "workspace",
+    "scope": "openid",
+    "secret": "",
+    "implicitFlow": true,
+    "silentLogin": true,
+    "redirectSilentIframeUri": "https://dms.datadmsdev.vaws/workspace/assets/silent-refresh.html",
+    "redirectUri": "/workspace/",
+    "redirectUriLogout": "/workspace/logout"
+    }
+}

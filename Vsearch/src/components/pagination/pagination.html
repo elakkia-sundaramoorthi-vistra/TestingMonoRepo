@@ -1,0 +1,417 @@
+<!-- <div *ngIf="apiSettingsProvider.pagination.pages.length > 0">
+  <div *ngIf="!collapsedMode" style="display: inline;">
+    <ion-note>
+      <ion-grid class="pagination-grid">
+        <ion-row>
+          <ion-col>
+            <ion-grid class="page-number-grid">
+              <ion-row>
+                <ion-col>
+                  <span class="pagination-header pagination-logo-other-alphabets">
+                    <img src="../../assets/imgs/pagination/VSearch_BLANK.png">
+                  </span>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col>
+                  <a (click)="emitGoToPrevious()" class="pagination-controls pagination-number clickable">
+                    Previous
+                  </a>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-col>
+          <ion-col>
+            <ion-grid class="page-number-grid">
+              <ion-row>
+                <ion-col>
+                  <span class="pagination-header pagination-logo-other-alphabets">
+                    <img src="../../assets/imgs/pagination/VSearch_BLANK.png">
+                  </span>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col>
+                  <a class="pagination-number" (click)='emitGoToPage(1)'>
+                    <span *ngIf='apiSettingsProvider.pagination.pageNumber == 1' class="current-page">
+                      1
+                    </span>
+                    <span *ngIf='apiSettingsProvider.pagination.pageNumber != 1' class="pagination-controls clickable">
+                      1
+                    </span>
+                  </a>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-col>
+          <ion-col>
+            <ion-grid class="page-number-grid">
+              <ion-row>
+                <ion-col>
+                  <span class="pagination-header pagination-logo-other-alphabets">
+                    <img src="../../assets/imgs/pagination/VSearch_V.png">
+                  </span>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col *ngIf="apiSettingsProvider.pagination.pages.length > 1">
+                  <a class="pagination-number" (click)='emitGoToPage(2)'>
+                    <span *ngIf='apiSettingsProvider.pagination.pageNumber == 2' class="current-page">
+                      2
+                    </span>
+                    <span *ngIf='apiSettingsProvider.pagination.pageNumber != 2' class="pagination-controls clickable">
+                      2
+                    </span>
+                  </a>
+                </ion-col>
+                <ion-col *ngIf="apiSettingsProvider.pagination.pages.length < 2">
+                  &nbsp;
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-col>
+          <ion-col>
+            <ion-grid class="page-number-grid">
+              <ion-row>
+                <ion-col>
+                  <span class="pagination-header pagination-logo-other-alphabets">
+                    <img src="../../assets/imgs/pagination/VSearch_S.png">
+                  </span>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col *ngIf="apiSettingsProvider.pagination.pages.length > 2">
+                  <a class="pagination-number" (click)='emitGoToPage(3)'>
+                    <span *ngIf='apiSettingsProvider.pagination.pageNumber == 3' class="current-page">
+                      3
+                    </span>
+                    <span *ngIf='apiSettingsProvider.pagination.pageNumber != 3' class="pagination-controls clickable">
+                      3
+                    </span>
+                  </a>
+                </ion-col>
+                <ion-col *ngIf="apiSettingsProvider.pagination.pages.length < 3">
+                  &nbsp;
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-col>
+          <ion-col>
+            <ion-grid class="page-number-grid">
+              <ion-row>
+                <ion-col>
+                  <span class="pagination-header pagination-logo-other-alphabets">
+                    <img src="../../assets/imgs/pagination/VSearch_E.png">
+                  </span>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col *ngIf="apiSettingsProvider.pagination.pages.length > 3">
+                  <a class="pagination-number" (click)='emitGoToPage(4)'>
+                    <span *ngIf='apiSettingsProvider.pagination.pageNumber == 4' class="current-page">
+                      4
+                    </span>
+                    <span *ngIf='apiSettingsProvider.pagination.pageNumber != 4' class="pagination-controls clickable">
+                      4
+                    </span>
+                  </a>
+                </ion-col>
+                <ion-col *ngIf="apiSettingsProvider.pagination.pages.length < 4">
+                  &nbsp;
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-col>
+          <ion-col>
+            <ion-grid class="page-number-grid">
+              <ion-row>
+                <ion-col>
+                  <span class="pagination-header pagination-logo-other-alphabets">
+                    <img src="../../assets/imgs/pagination/VSearch_A.png">
+                  </span>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col *ngIf="apiSettingsProvider.pagination.pages.length > 4">
+                  <a class="pagination-number" (click)='emitGoToPage(5)'>
+                    <span *ngIf='apiSettingsProvider.pagination.pageNumber == 5' class="current-page">
+                      5
+                    </span>
+                    <span *ngIf='apiSettingsProvider.pagination.pageNumber != 5' class="pagination-controls clickable">
+                      5
+                    </span>
+                  </a>
+                </ion-col>
+                <ion-col *ngIf="apiSettingsProvider.pagination.pages.length < 5">
+                  &nbsp;
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-col>
+          <ion-col>
+            <ion-grid class="page-number-grid">
+              <ion-row>
+                <ion-col>
+                  <span class="pagination-header pagination-logo-other-alphabets">
+                    <img src="../../assets/imgs/pagination/VSearch_R.png">
+                  </span>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col *ngIf="apiSettingsProvider.pagination.pages.length > 5">
+                  <a class="pagination-number" (click)='emitGoToPage(6)'>
+                    <span *ngIf='apiSettingsProvider.pagination.pageNumber == 6' class="current-page">
+                      6
+                    </span>
+                    <span *ngIf='apiSettingsProvider.pagination.pageNumber != 6' class="pagination-controls clickable">
+                      6
+                    </span>
+                  </a>
+                </ion-col>
+                <ion-col *ngIf="apiSettingsProvider.pagination.pages.length < 6">
+                  &nbsp;
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-col>
+          <ion-col>
+            <ion-grid class="page-number-grid">
+              <ion-row>
+                <ion-col>
+                  <span class="pagination-header pagination-logo-other-alphabets">
+                    <img src="../../assets/imgs/pagination/VSearch_C.png">
+                  </span>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col *ngIf="apiSettingsProvider.pagination.pages.length > 6">
+                  <a class="pagination-number" (click)='emitGoToPage(7)'>
+                    <span *ngIf='apiSettingsProvider.pagination.pageNumber == 7' class="current-page">
+                      7
+                    </span>
+                    <span *ngIf='apiSettingsProvider.pagination.pageNumber != 7' class="pagination-controls clickable">
+                      7
+                    </span>
+                  </a>
+                </ion-col>
+                <ion-col *ngIf="apiSettingsProvider.pagination.pages.length < 7">
+                  &nbsp;
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-col>
+          <ion-col>
+            <ion-grid class="page-number-grid">
+              <ion-row>
+                <ion-col>
+                  <span class="pagination-header pagination-logo-other-alphabets">
+                    <img src="../../assets/imgs/pagination/VSearch_H.png">
+                  </span>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col *ngIf="apiSettingsProvider.pagination.pages.length > 7">
+                  <a class="pagination-number" (click)='emitGoToPage(8)'>
+                    <span *ngIf='apiSettingsProvider.pagination.pageNumber == 8' class="current-page">
+                      8
+                    </span>
+                    <span *ngIf='apiSettingsProvider.pagination.pageNumber != 8' class="pagination-controls clickable">
+                      8
+                    </span>
+                  </a>
+                </ion-col>
+                <ion-col *ngIf="apiSettingsProvider.pagination.pages.length < 8">
+                  &nbsp;
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-col>
+          <ion-col>
+            <ion-grid class="page-number-grid">
+              <ion-row>
+                <ion-col>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col *ngIf="apiSettingsProvider.pagination.pages.length > 8">
+                  <a class="pagination-number" (click)='emitGoToPage(9)'>
+                    <span *ngIf='apiSettingsProvider.pagination.pageNumber == 9' class="current-page">
+                      9
+                    </span>
+                    <span *ngIf='apiSettingsProvider.pagination.pageNumber != 9' class="pagination-controls clickable">
+                      9
+                    </span>
+                  </a>
+                </ion-col>
+                <ion-col *ngIf="apiSettingsProvider.pagination.pages.length < 9">
+                  &nbsp;
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-col>
+          <ion-col>
+            <ion-grid class="page-number-grid">
+              <ion-row>
+                <ion-col>
+                  <span class="pagination-header">&nbsp;</span>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col>
+                  <ion-note (click)="presentPageNumberPopover($event)" *ngIf="apiSettingsProvider.pagination.pages.length > 9">
+                    {{ moreResultsButtonLabel }} <span *ngIf="apiSettingsProvider.pagination.pageNumber > lastPage" class="current-page">{{ apiSettingsProvider.pagination.pageNumber }}</span><ion-icon name="md-arrow-dropdown"></ion-icon>
+                  </ion-note>
+                  <ion-note>
+                    <a (click)='emitGoToNext()' class="pagination-controls clickable">Next</a>
+                  </ion-note> &nbsp;
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-note>
+  <button ion-button small clear color="vistra-grey" (click)="presentPageNumberPopover($event)" *ngIf="collapsedMode">
+    Go to page {{ apiSettingsProvider.pagination.pageNumber }}
+    <ion-icon name="md-arrow-dropdown"></ion-icon>
+  </button>
+</div> -->
+<div *ngIf="searchProvider.floatingPages.length > 0 && !utils.isIe11">
+  <div *ngIf="!collapsedMode" style="display: inline;">
+    <ion-note>
+      <ion-grid class="pagination-grid">
+        <ion-row>
+          <ion-col col-12>
+            <img src="../../assets/imgs/VSearch Logo.png" class="pagination-header-row-contiguous">
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-grid class="page-number-grid">
+              <ion-row class="pagination-header-row-hidden">
+                <ion-col>
+                  <span class="pagination-header pagination-logo-other-alphabets">
+                    &nbsp;
+                  </span>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col class="paging-col">
+                  <a class="pagination-number" (click)='emitGoToPrevious()'>
+                    <span class="pagination-controls clickable">
+                     <<
+                    </span>
+                  </a>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-col>
+          <ion-col *ngFor="let col of searchProvider.floatingPages">
+            <ion-grid class="page-number-grid">
+              <ion-row class="pagination-header-row-hidden">
+                <ion-col>
+                  <span class="pagination-header pagination-logo-other-alphabets">
+                    <img [src]="col.logoSegment">
+                  </span>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col class="paging-col">
+                  <a class="pagination-number" (click)='emitGoToPage(col.page)' *ngIf='col.page > 0'>
+                    <span *ngIf='apiSettingsProvider.pagination.pageNumber == col.page' class="current-page">
+                      {{ col.page }}
+                    </span>
+                    <span *ngIf='apiSettingsProvider.pagination.pageNumber != col.page' class="pagination-controls clickable">
+                      {{ col.page }}
+                    </span>
+                  </a>
+                  <span *ngIf='col.page == 0'>&nbsp;</span>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-col>
+          <ion-col>
+            <ion-grid class="page-number-grid">
+              <ion-row class="pagination-header-row-hidden">
+                <ion-col>
+                  <span class="pagination-header pagination-logo-other-alphabets">
+                    &nbsp;
+                  </span>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col class="paging-col">
+                  <a class="pagination-number" (click)='emitGoToNext()'>
+                    <span class="pagination-controls clickable">
+                      >>
+                    </span>
+                  </a>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-note>
+  </div>
+</div>
+
+<div *ngIf="searchProvider.floatingPages.length > 0 && utils.isIe11">
+  <div *ngIf="!collapsedMode" style="display: inline;">
+    <table>
+      <tr>
+        <td>
+          <img src="../../assets/imgs/VSearch Logo.png" class="pagination-header-row-contiguous ie11-img">
+        </td>
+      </tr>
+      <table  class="page-number-grid">
+        <tr>
+          <td class="paging-col-ie11">
+            <a class="pagination-number" (click)='emitGoToPrevious()'>
+              <span class="pagination-controls clickable">
+                <<</span>
+            </a>
+          </td>
+          <td *ngFor="let col of searchProvider.floatingPages">
+            <table class="page-number-grid">
+              <tr class="pagination-header-row-hidden">
+                <td>
+                  <span class="pagination-header pagination-logo-other-alphabets">
+                    <img [src]="col.logoSegment">
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td class="paging-col-ie11">
+                  <a class="pagination-number" (click)='emitGoToPage(col.page)' *ngIf='col.page > 0'>
+                    <span *ngIf='apiSettingsProvider.pagination.pageNumber == col.page' class="current-page">
+                      {{ col.page }}
+                    </span>
+                    <span *ngIf='apiSettingsProvider.pagination.pageNumber != col.page'
+                      class="pagination-controls clickable">
+                      {{ col.page }}
+                    </span>
+                  </a>
+                  <span *ngIf='col.page == 0'>&nbsp;</span>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table class="page-number-grid">
+              <tr>
+                <td class="paging-col-ie11">
+                  <a class="pagination-number" (click)='emitGoToNext()'>
+                    <span class="pagination-controls clickable">
+                      >>
+                    </span>
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </table>
+  </div>
+</div>
