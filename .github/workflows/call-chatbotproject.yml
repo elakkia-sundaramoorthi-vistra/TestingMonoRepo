@@ -3,10 +3,16 @@ name: Build Project ChatBot
 on:
   push:
     branches: [ "main" ]
+    paths:
+      - 'ChatBot' # Trigger only for changes in Project A's directory
+    paths-ignore:
+      - ".github/workflows/**"
   pull_request:
     branches: [ "main" ]
     paths:
       - 'ChatBot' # Trigger only for changes in Project A's directory
+    paths-ignore:
+      - ".github/workflows/**"
   workflow_dispatch: # Allows manual triggering
 
 jobs:
